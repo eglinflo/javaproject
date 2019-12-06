@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="makery.address.view.ChooseLanguagesController">
+   <children>
+      <GridPane prefHeight="493.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="68.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="10.0" prefWidth="474.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="49.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="142.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="334.0" minHeight="10.0" prefHeight="241.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="159.0" minHeight="10.0" prefHeight="110.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="languageChoiceLabel" text="Please choose your language:" textFill="#130bae" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Label>
+            <ButtonBar prefHeight="203.0" prefWidth="479.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+              <buttons>
+                  <Button fx:id="germanBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="germanBtn" textAlignment="JUSTIFY">
+                     <graphic>
+                        <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Ressources/german_flag.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button> 
+                  <Button fx:id="frenchBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="frenchBtn" textAlignment="JUSTIFY">
+                     <graphic>
+                        <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Ressources/french_flag.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="britishBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="britishBtn" textAlignment="JUSTIFY">
+                     <graphic>
+                        <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Ressources/english_flag.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+              </buttons>
+            </ButtonBar>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
