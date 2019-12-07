@@ -69,11 +69,11 @@ public class QuizzGeneration {
 			switch (random) {
 			case 0 : break;
 			case 1 : tmp = q.getFirstAnswer();
-			q.questionsSetter(q.getSecondAnswer(), q.getThirdAnswer(), q.getFourthAnswer(), tmp);
+			q.questionSetter(q.getSecondAnswer(), q.getThirdAnswer(), q.getFourthAnswer(), tmp);
 			case 2 : tmp = q.getFirstAnswer();
-			q.questionsSetter(q.getThirdAnswer(), q.getFourthAnswer(), tmp, q.getSecondAnswer());
+			q.questionSetter(q.getThirdAnswer(), q.getFourthAnswer(), tmp, q.getSecondAnswer());
 			case 3 : tmp = q.getFirstAnswer();
-			q.questionsSetter(q.getFourthAnswer(), tmp, q.getSecondAnswer(), q.getThirdAnswer());
+			q.questionSetter(q.getFourthAnswer(), tmp, q.getSecondAnswer(), q.getThirdAnswer());
 			}
 		}
 

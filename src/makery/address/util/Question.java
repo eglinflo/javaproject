@@ -85,7 +85,7 @@ public class Question {
 		this.correctAnswer = correctAnswer;
 	}
 	
-	public void questionsSetter(String a, String b, String c, String d) {
+	public void questionSetter(String a, String b, String c, String d) {
 		this.firstAnswer = a;
 		this.secondAnswer = b;
 		this.thirdAnswer = c;
