@@ -30,7 +30,7 @@ public class ChooseLanguagesController {
 	
 	@FXML
 	private void handleGerman() {
-		QuizzGeneration.file = "src/questionGerman.csv";
+		QuizzGeneration.file = "questionGerman.csv";
 		printLanguage.setText("German");
 		QuizzGeneration.generation();
 	}
