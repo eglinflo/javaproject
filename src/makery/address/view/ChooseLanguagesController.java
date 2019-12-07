@@ -17,8 +17,6 @@ public class ChooseLanguagesController {
 	private Button britishBtn;
 	@FXML
 	private Label languageChoiceLabel;
-	@FXML
-	private Label printLanguage;
 
 	// Reference to the main application
 	public MainApplication mainApp;
@@ -31,21 +29,18 @@ public class ChooseLanguagesController {
 	@FXML
 	private void handleGerman() {
 		QuizzGeneration.file = "questionGerman.csv";
-		printLanguage.setText("German");
 		QuizzGeneration.generation();
 	}
 	
 	@FXML
 	private void handleEnglish() {
 		QuizzGeneration.file = "questionEnglish.csv";
-		printLanguage.setText("English");
 		QuizzGeneration.generation();
 	}
 	
 	@FXML
 	private void handleFrench() {
 		QuizzGeneration.file = "questionFrench.csv";
-		printLanguage.setText("French");
 		QuizzGeneration.generation();
 	}
 }

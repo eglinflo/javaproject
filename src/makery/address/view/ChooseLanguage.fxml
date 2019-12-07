@@ -61,7 +61,6 @@
                   </Button>
               </buttons>
             </ButtonBar>
-            <Label fx:id="printLanguage" text="Label" GridPane.columnIndex="1" />
          </children>
       </GridPane>
    </children>
