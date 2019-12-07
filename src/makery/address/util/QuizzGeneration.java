@@ -8,12 +8,12 @@ public class QuizzGeneration {
 
 	static Vector<Question> questions = new Vector<Question>();
 	static int count=0;
-	static String file;
+	public static String file;
 
 	public static void generation() {
 		try {
 
-			file = "questionFrench"; //les autres fichiers sont nommés "questionEnglish" et "questionGerman".
+			//file = "questionFrench"; //les autres fichiers sont nommés "questionEnglish" et "questionGerman".
 			FileReader f = new FileReader(file);
 			System.out.println("File " + file + " was successfully opened.");
 			char [] c = new char[1000000];
