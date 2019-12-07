@@ -84,4 +84,11 @@ public class Question {
 	public void setCorrectAnswer(String correctAnswer) {
 		this.correctAnswer = correctAnswer;
 	}
+	
+	public void questionSetter(String a, String b, String c, String d) {
+		this.firstAnswer = a;
+		this.secondAnswer = b;
+		this.thirdAnswer = c;
+		this.fourthAnswer = d;
+	}
 }
