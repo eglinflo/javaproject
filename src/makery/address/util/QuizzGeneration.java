@@ -32,12 +32,12 @@ public class QuizzGeneration {
 			System.err.println("Failure to read the file " + file + ".");
 			System.err.println(e.getMessage());
 		}
-		
+
 		System.out.println(count + " Entries created.\n");
-		
+
 		questionSelection();
 		System.out.println(count + " Entries selected.\n");
-		
+
 		debug();
 
 	}
@@ -47,17 +47,35 @@ public class QuizzGeneration {
 			System.out.println(q.toString());
 		}
 	}
-	
+
 	public static void questionSelection() {
-		
+
 		do {
-					int q = (int) (Math.random()*count);
-					questions.remove(q);
-					count--;
-				
+			int q = (int) (Math.random()*count);
+			questions.remove(q);
+			count--;
+
 			System.out.println(count);
 		}
 		while (count>10);
 	}
 
+	public static void answerOrder() {
+		String tmp = "";
+
+		for (Question q : questions) {
+			int random = (int) (Math.random()*4);
+
+			switch (random) {
+			case 0 : break;
+			case 1 : tmp = q.getFirstAnswer();
+			q.questionsSetter(q.getSecondAnswer(), q.getThirdAnswer(), q.getFourthAnswer(), tmp);
+			case 2 : tmp = q.getFirstAnswer();
+			q.questionsSetter(q.getThirdAnswer(), q.getFourthAnswer(), tmp, q.getSecondAnswer());
+			case 3 : tmp = q.getFirstAnswer();
+			q.questionsSetter(q.getFourthAnswer(), tmp, q.getSecondAnswer(), q.getThirdAnswer());
+			}
+		}
+
+	}
 }
