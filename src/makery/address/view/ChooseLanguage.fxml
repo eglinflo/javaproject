@@ -32,29 +32,29 @@
             </Label>
             <ButtonBar prefHeight="203.0" prefWidth="479.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
               <buttons>
-                  <Button fx:id="germanBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="germanBtn" textAlignment="JUSTIFY">
+                  <Button fx:id="germanBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handleGerman" prefHeight="150.0" prefWidth="150.0" text="germanBtn" textAlignment="JUSTIFY">
                      <graphic>
                         <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Ressources/german_flag.jpg" />
+                              <Image url="@../../../../images/german_flag.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button> 
-                  <Button fx:id="frenchBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="frenchBtn" textAlignment="JUSTIFY">
+                  <Button fx:id="frenchBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handleFrench" prefHeight="150.0" prefWidth="150.0" text="frenchBtn" textAlignment="JUSTIFY">
                      <graphic>
                         <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Ressources/french_flag.jpg" />
+                              <Image url="@../../../../images/french_flag.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="britishBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="britishBtn" textAlignment="JUSTIFY">
+                  <Button fx:id="britishBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handleEnglish" prefHeight="150.0" prefWidth="150.0" text="britishBtn" textAlignment="JUSTIFY">
                      <graphic>
                         <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Ressources/english_flag.jpg" />
+                              <Image url="@../../../../images/english_flag.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
