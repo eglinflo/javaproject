@@ -40,6 +40,7 @@ public class QuizzGeneration {
 
 		questionGeneration();
 
+
 		debug();
 
 	}
@@ -71,14 +72,13 @@ public class QuizzGeneration {
 			switch (random) {
 			case 0 : break;
 			case 1 : tmp = q.getFirstAnswer();
-					 q.setQuestions(q.getSecondAnswer(), q.getThirdAnswer(), q.getFourthAnswer(), tmp);
+			q.setQuestions(q.getSecondAnswer(), q.getThirdAnswer(), q.getFourthAnswer(), tmp);
 			case 2 : tmp = q.getFirstAnswer();
-					 q.setQuestions(q.getThirdAnswer(), q.getFourthAnswer(), tmp, q.getSecondAnswer());
+			q.setQuestions(q.getThirdAnswer(), q.getFourthAnswer(), tmp, q.getSecondAnswer());
 			case 3 : tmp = q.getFirstAnswer();
-					 q.setQuestions(q.getFourthAnswer(), tmp, q.getSecondAnswer(), q.getThirdAnswer());
+			q.setQuestions(q.getFourthAnswer(), tmp, q.getSecondAnswer(), q.getThirdAnswer());
 			}
 
 		}
-
 	}
 }

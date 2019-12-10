@@ -1,7 +1,7 @@
 package makery.address.util;
 
 public class Question {
-	
+
 	private int questionNumber;
 	private String question;
 	private String firstAnswer;
@@ -9,7 +9,7 @@ public class Question {
 	private String thirdAnswer;
 	private String fourthAnswer;
 	private String correctAnswer;
-	
+
 	public Question(int questionNumber, String question, String firstAnswer, String secondAnswer, String thirdAnswer,
 			String fourthAnswer, String correctAnswer) {
 		super();
@@ -84,7 +84,8 @@ public class Question {
 	public void setCorrectAnswer(String correctAnswer) {
 		this.correctAnswer = correctAnswer;
 	}
-	
+
+
 	public void setQuestions(String firstAnswer, String secondAnswer, String thirdAnswer, String fourthAnswer) {
 		this.firstAnswer = firstAnswer;
 		this.secondAnswer = secondAnswer;
