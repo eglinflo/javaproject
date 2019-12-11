@@ -36,7 +36,7 @@
                      <graphic>
                         <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../images/german_flag.jpg" />
+                              <Image url="@../../../../Ressources/german_flag.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -45,7 +45,7 @@
                      <graphic>
                         <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../images/french_flag.jpg" />
+                              <Image url="@../../../../Ressources/french_flag.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -54,7 +54,7 @@
                      <graphic>
                         <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../images/english_flag.jpg" />
+                              <Image url="@../../../../Ressources/english_flag.png" />
                            </image>
                         </ImageView>
                      </graphic>

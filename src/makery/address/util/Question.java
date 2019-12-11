@@ -1,25 +1,25 @@
 package makery.address.util;
 
 public class Question {
-	
-	public static int questionNumber;
-	public static String question;
-	public static String firstAnswer;
-	public static String secondAnswer;
-	public static String thirdAnswer;
-	public static String fourthAnswer;
-	public static String correctAnswer;
-	
+
+	private int questionNumber;
+	private String question;
+	private String firstAnswer;
+	private String secondAnswer;
+	private String thirdAnswer;
+	private String fourthAnswer;
+	private String correctAnswer;
+
 	public Question(int questionNumber, String question, String firstAnswer, String secondAnswer, String thirdAnswer,
 			String fourthAnswer, String correctAnswer) {
 		super();
-		Question.questionNumber = questionNumber;
-		Question.question = question;
-		Question.firstAnswer = firstAnswer;
-		Question.secondAnswer = secondAnswer;
-		Question.thirdAnswer = thirdAnswer;
-		Question.fourthAnswer = fourthAnswer;
-		Question.correctAnswer = correctAnswer;
+		this.questionNumber = questionNumber;
+		this.question = question;
+		this.firstAnswer = firstAnswer;
+		this.secondAnswer = secondAnswer;
+		this.thirdAnswer = thirdAnswer;
+		this.fourthAnswer = fourthAnswer;
+		this.correctAnswer = correctAnswer;
 	}
 
 	@Override
@@ -34,7 +34,7 @@ public class Question {
 	}
 
 	public void setQuestionNumber(int questionNumber) {
-		Question.questionNumber = questionNumber;
+		this.questionNumber = questionNumber;
 	}
 
 	public String getQuestion() {
@@ -42,7 +42,7 @@ public class Question {
 	}
 
 	public void setQuestion(String question) {
-		Question.question = question;
+		this.question = question;
 	}
 
 	public String getFirstAnswer() {
@@ -50,7 +50,7 @@ public class Question {
 	}
 
 	public void setFirstAnswer(String firstAnswer) {
-		Question.firstAnswer = firstAnswer;
+		this.firstAnswer = firstAnswer;
 	}
 
 	public String getSecondAnswer() {
@@ -58,7 +58,7 @@ public class Question {
 	}
 
 	public void setSecondAnswer(String secondAnswer) {
-		Question.secondAnswer = secondAnswer;
+		this.secondAnswer = secondAnswer;
 	}
 
 	public String getThirdAnswer() {
@@ -66,7 +66,7 @@ public class Question {
 	}
 
 	public void setThirdAnswer(String thirdAnswer) {
-		Question.thirdAnswer = thirdAnswer;
+		this.thirdAnswer = thirdAnswer;
 	}
 
 	public String getFourthAnswer() {
@@ -74,7 +74,7 @@ public class Question {
 	}
 
 	public void setFourthAnswer(String fourthAnswer) {
-		Question.fourthAnswer = fourthAnswer;
+		this.fourthAnswer = fourthAnswer;
 	}
 
 	public String getCorrectAnswer() {
@@ -82,13 +82,14 @@ public class Question {
 	}
 
 	public void setCorrectAnswer(String correctAnswer) {
-		Question.correctAnswer = correctAnswer;
+		this.correctAnswer = correctAnswer;
 	}
-	
-	public void questionSetter(String a, String b, String c, String d) {
-		Question.firstAnswer = a;
-		Question.secondAnswer = b;
-		Question.thirdAnswer = c;
-		Question.fourthAnswer = d;
+
+
+	public void setQuestions(String firstAnswer, String secondAnswer, String thirdAnswer, String fourthAnswer) {
+		this.firstAnswer = firstAnswer;
+		this.secondAnswer = secondAnswer;
+		this.thirdAnswer = thirdAnswer;
+		this.fourthAnswer = fourthAnswer;
 	}
 }

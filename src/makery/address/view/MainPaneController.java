@@ -1,6 +1,7 @@
 package makery.address.view;
 
 import javafx.fxml.FXML;
+
 import javafx.scene.control.Button;
 import makery.address.MainApplication;
 import makery.address.util.Question;
@@ -61,6 +62,7 @@ public class MainPaneController {
 			}
 		}
 		
+
 		@FXML
 		private void handleAnswerC() {
 			result = Question.thirdAnswer;
@@ -72,6 +74,7 @@ public class MainPaneController {
 			}
 		}
 		
+
 		@FXML
 		private void handleAnswerD() {
 			result = Question.fourthAnswer;

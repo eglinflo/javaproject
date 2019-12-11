@@ -6,8 +6,8 @@ import java.util.Vector;
 
 public class QuizzGeneration {
 
-	public static Vector<Question> questions = new Vector<Question>();
-	public static int count=0;
+	static Vector<Question> questions = new Vector<Question>();
+	static int count=0;
 	public static String file;
 
 	public static void generation() {
@@ -38,6 +38,8 @@ public class QuizzGeneration {
 		questionSelection();
 		System.out.println(count + " Entries selected.\n");
 
+		questionGeneration();
+
 		debug();
 
 	}
@@ -46,18 +48,6 @@ public class QuizzGeneration {
 		for (Question q : questions) {
 			System.out.println(q.toString());
 		}
-	}
-
-
-	public static Vector<Question> randomQuestionSelection() {
-
-		Vector<Question> selectedQuestions = new Vector<Question>();
-		int random = 0;
-		for (int i = 0; i < 10; i++) {
-			random = (int) Math.random()*30;
-			selectedQuestions.add(questions.get(random));
-		}
-		return selectedQuestions;
 	}
 
 	public static void questionSelection() {
@@ -72,22 +62,22 @@ public class QuizzGeneration {
 		while (count>10);
 	}
 
-	public static void answerOrder() {
+	public static void questionGeneration() {
 		String tmp = "";
 
 		for (Question q : questions) {
 			int random = (int) (Math.random()*4);
-
+			System.out.println(random);
 			switch (random) {
 			case 0 : break;
 			case 1 : tmp = q.getFirstAnswer();
-			q.questionSetter(q.getSecondAnswer(), q.getThirdAnswer(), q.getFourthAnswer(), tmp);
+			q.setQuestions(q.getSecondAnswer(), q.getThirdAnswer(), q.getFourthAnswer(), tmp);
 			case 2 : tmp = q.getFirstAnswer();
-			q.questionSetter(q.getThirdAnswer(), q.getFourthAnswer(), tmp, q.getSecondAnswer());
+			q.setQuestions(q.getThirdAnswer(), q.getFourthAnswer(), tmp, q.getSecondAnswer());
 			case 3 : tmp = q.getFirstAnswer();
-			q.questionSetter(q.getFourthAnswer(), tmp, q.getSecondAnswer(), q.getThirdAnswer());
+			q.setQuestions(q.getFourthAnswer(), tmp, q.getSecondAnswer(), q.getThirdAnswer());
 			}
-		}
 
+		}
 	}
 }

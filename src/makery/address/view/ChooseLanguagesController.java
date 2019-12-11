@@ -23,14 +23,12 @@ public class ChooseLanguagesController {
 
 	public void setMainApp(MainApplication mainApp) {
 		this.mainApp = mainApp;
-
 	}
-
+  
 	@FXML
 	private void handleGerman() {
 		QuizzGeneration.file = "questionGerman.csv";
 		QuizzGeneration.generation();
-
 		MainApplication.switchToMainApp(germanBtn);
 		
 	}
@@ -39,6 +37,7 @@ public class ChooseLanguagesController {
 	private void handleEnglish() {
 		QuizzGeneration.file = "questionEnglish.csv";
 		QuizzGeneration.generation();
+
 		MainApplication.switchToMainApp(britishBtn);
 	}
 
@@ -48,7 +47,4 @@ public class ChooseLanguagesController {
 		QuizzGeneration.generation();
 		MainApplication.switchToMainApp(frenchBtn);
 	}
-
-
 }
-
