@@ -10,6 +10,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import makery.address.util.Question;
 import makery.address.util.QuizzGeneration;
 import makery.address.view.ChooseLanguagesController;
 
@@ -77,17 +78,13 @@ public class MainApplication extends Application {
 					QuizzGeneration.file = "questionGerman.csv";
 					QuizzGeneration.generation();
 					// Load the quiz (MainPane) in the chosen language.
-					
+
 					FXMLLoader loader = new FXMLLoader();
 					loader.setLocation(MainApplication.class.getResource("view/MainPane.fxml"));
 					AnchorPane quizPane = (AnchorPane) loader.load();
 
 					// Set ChooseLanguage into the center of root layout.
 					roootLayout.setCenter(quizPane);
-
-					// Give the controller access to the main app.
-					//ChooseLanguagesController controller = loader.getController();
-					//controller.setMainApp(this);
 
 				} catch (IOException e) {
 					e.printStackTrace();
@@ -97,7 +94,6 @@ public class MainApplication extends Application {
 		});
 
 	}
-
 
 	/**
 	 * Returns the main stage.

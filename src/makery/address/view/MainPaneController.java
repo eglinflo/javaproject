@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import makery.address.MainApplication;
 import makery.address.util.Question;
+import makery.address.util.QuizzGeneration;
 import javafx.scene.control.Label;
 
 public class MainPaneController {
@@ -27,24 +28,15 @@ public class MainPaneController {
 		public void setMainApp(MainApplication mainApp) {
 			this.mainApp = mainApp;
 		}
+	
 		@FXML
-		private void printAnswerA() {
-			answerA.setText(Question.firstAnswer);
-		}
-		
-		@FXML
-		private void printAnswerB() {
-			answerB.setText(Question.secondAnswer);
-		}
-		
-		@FXML
-		private void printAnswerC() {
-			answerC.setText(Question.thirdAnswer);
-		}
-		
-		@FXML
-		private void printAnswerD() {
-			answerD.setText(Question.fourthAnswer);
+		private void handlePrintQuestion() {
+			reset();
+			answerA.setText(QuizzGeneration.randomQuestionSelection().get(0).getFirstAnswer());
+			answerB.setText(QuizzGeneration.randomQuestionSelection().get(0).getSecondAnswer());
+			answerC.setText(QuizzGeneration.randomQuestionSelection().get(0).getThirdAnswer());
+			answerD.setText(QuizzGeneration.randomQuestionSelection().get(0).getFourthAnswer());
+			questionLabel.setText(QuizzGeneration.randomQuestionSelection().get(0).getQuestion());
 		}
 		
 		@FXML

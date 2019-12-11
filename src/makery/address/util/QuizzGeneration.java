@@ -6,8 +6,8 @@ import java.util.Vector;
 
 public class QuizzGeneration {
 
-	static Vector<Question> questions = new Vector<Question>();
-	static int count=0;
+	public static Vector<Question> questions = new Vector<Question>();
+	public static int count=0;
 	public static String file;
 
 	public static void generation() {
@@ -46,6 +46,18 @@ public class QuizzGeneration {
 		for (Question q : questions) {
 			System.out.println(q.toString());
 		}
+	}
+
+
+	public static Vector<Question> randomQuestionSelection() {
+
+		Vector<Question> selectedQuestions = new Vector<Question>();
+		int random = 0;
+		for (int i = 0; i < 10; i++) {
+			random = (int) Math.random()*30;
+			selectedQuestions.add(questions.get(random));
+		}
+		return selectedQuestions;
 	}
 
 	public static void questionSelection() {
