@@ -6,7 +6,7 @@ import java.util.Vector;
 
 public class QuizzGeneration {
 
-	static Vector<Question> questions = new Vector<Question>();
+	public static Vector<Question> questions = new Vector<Question>();
 	static int count=0;
 	public static String file;
 
