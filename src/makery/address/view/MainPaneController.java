@@ -1,16 +1,12 @@
 package makery.address.view;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
+
 import javafx.scene.control.Button;
-import javafx.scene.control.Alert.AlertType;
 import makery.address.MainApplication;
+import makery.address.util.Question;
 import makery.address.util.QuizzGeneration;
 import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.layout.Background;
-import javafx.scene.paint.Color;
 
 public class MainPaneController {
 	
@@ -33,26 +29,21 @@ public class MainPaneController {
 		public void setMainApp(MainApplication mainApp) {
 			this.mainApp = mainApp;
 		}
-		
-		private void printAnswerA() {
-			answerA.setText(QuizzGeneration.firstAnswer);
+	
+		@FXML
+		private void handlePrintQuestion() {
+			reset();
+			answerA.setText(QuizzGeneration.randomQuestionSelection().get(0).getFirstAnswer());
+			answerB.setText(QuizzGeneration.randomQuestionSelection().get(0).getSecondAnswer());
+			answerC.setText(QuizzGeneration.randomQuestionSelection().get(0).getThirdAnswer());
+			answerD.setText(QuizzGeneration.randomQuestionSelection().get(0).getFourthAnswer());
+			questionLabel.setText(QuizzGeneration.randomQuestionSelection().get(0).getQuestion());
 		}
 		
-		private void printAnswerB() {
-			answerB.setText(QuizzGeneration.secondAnswer);
-		}
-		
-		private void printAnswerC() {
-			answerC.setText(QuizzGeneration.thirdAnswer);
-		}
-		
-		private void printAnswerD() {
-			answerD.setText(QuizzGeneration.fourthAnswer);
-		}
-		
+		@FXML
 		private void handleAnswerA() {
-			result = QuizzGeneration.firstAnswer;
-			if(verification(result, QuizzGeneration.correctAnswer)==true) {
+			result = Question.firstAnswer;
+			if(verification(result, Question.correctAnswer)==true) {
 				answerA.setStyle("-fx-background-color: Green");
 			}
 			else {
@@ -60,9 +51,10 @@ public class MainPaneController {
 			}
 		}
 		
+		@FXML
 		private void handleAnswerB() {
-			result = QuizzGeneration.secondAnswer;
-			if(verification(result, QuizzGeneration.correctAnswer)==true) {
+			result = Question.secondAnswer;
+			if(verification(result, Question.correctAnswer)==true) {
 				answerA.setStyle("-fx-background-color: Green");
 			}
 			else {
@@ -70,9 +62,11 @@ public class MainPaneController {
 			}
 		}
 		
+
+		@FXML
 		private void handleAnswerC() {
-			result = QuizzGeneration.thirdAnswer;
-			if(verification(result, QuizzGeneration.correctAnswer)==true) {
+			result = Question.thirdAnswer;
+			if(verification(result, Question.correctAnswer)==true) {
 				answerA.setStyle("-fx-background-color: Green");
 			}
 			else {
@@ -80,9 +74,11 @@ public class MainPaneController {
 			}
 		}
 		
+
+		@FXML
 		private void handleAnswerD() {
-			result = QuizzGeneration.fourthAnswer;
-			if(verification(result, QuizzGeneration.correctAnswer)==true) {
+			result = Question.fourthAnswer;
+			if(verification(result, Question.correctAnswer)==true) {
 				answerA.setStyle("-fx-background-color: Green");
 			}
 			else {

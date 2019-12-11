@@ -40,7 +40,6 @@ public class QuizzGeneration {
 
 		questionGeneration();
 
-
 		debug();
 
 	}
