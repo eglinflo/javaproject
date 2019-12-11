@@ -10,7 +10,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import makery.address.util.Question;
 import makery.address.util.QuizzGeneration;
 import makery.address.view.ChooseLanguagesController;
 import makery.address.view.MainPaneController;
