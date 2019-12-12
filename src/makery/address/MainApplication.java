@@ -14,10 +14,13 @@ import makery.address.util.QuizzGeneration;
 import makery.address.view.ChooseLanguagesController;
 import makery.address.view.MainPaneController;
 
+//public static String answerAString = QuizzGeneration.questions.get(1).getFirstAnswer();
+
 public class MainApplication extends Application {
 
 	private Stage primaryStage;
 	private static BorderPane roootLayout;
+	
 
 	@Override
 	public void start(Stage primaryStage) {
@@ -26,7 +29,8 @@ public class MainApplication extends Application {
 
 		initRootLayout();
 
-		showChooseLanguage();
+		showChooseLanguage();		
+		
 	}
 
 	/**
@@ -69,38 +73,41 @@ public class MainApplication extends Application {
 			e.printStackTrace();
 		}
 	}
+	
 
-	public static void switchToMainApp(Button btn) {
-		btn.setOnMouseClicked(new EventHandler<MouseEvent>() {
-			@Override
-			public void handle(MouseEvent event){
-				try {
+	
+	public void switchToMainApp() {			
+		try {
+			
 					// Load the quiz (MainPane) in the chosen language.
-
 					FXMLLoader loader = new FXMLLoader();
 					loader.setLocation(MainApplication.class.getResource("view/MainPane.fxml"));
 					AnchorPane quizPane = (AnchorPane) loader.load();
 
 					// Set ChooseLanguage into the center of root layout.
 					roootLayout.setCenter(quizPane);
+					
+					// Give the controller access to the main app.
+					MainPaneController controller = loader.getController();
+					controller.setMainApp(this);
+					
 					//MainPaneController.handlePrintQuestion();
 					
-					MainPaneController.answerA.setText(QuizzGeneration.questions.get(1).getFirstAnswer());
-					MainPaneController.answerB.setText(QuizzGeneration.questions.get(1).getSecondAnswer());
+					//MainPaneController.answerA.setText(textAnwserA);
+					/*MainPaneController.answerB.setText(QuizzGeneration.questions.get(1).getSecondAnswer());
 					MainPaneController.answerC.setText(QuizzGeneration.questions.get(1).getThirdAnswer());
 					MainPaneController.answerD.setText(QuizzGeneration.questions.get(1).getFourthAnswer());
-					MainPaneController.questionLabel.setText(QuizzGeneration.questions.get(1).getQuestion());
+					//MainPaneController.questionLabel.setText(QuizzGeneration.questions.get(1).getQuestion());*/
 
 
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
-			}
+			
 
-		});
-
-	}
-
+	
+}
+	
 	/**
 	 * Returns the main stage.
 	 * @return
@@ -108,6 +115,7 @@ public class MainApplication extends Application {
 	public Stage getPrimaryStage() {
 		return primaryStage;
 	}
+	
 
 	public static void main(String[] args) {
 		launch(args);

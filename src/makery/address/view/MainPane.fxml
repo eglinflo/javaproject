@@ -10,6 +10,6 @@
       <Button fx:id="answerB" layoutX="276.0" layoutY="245.0" mnemonicParsing="false" onAction="#handleAnswerB" prefHeight="50.0" prefWidth="200.0" text="Afficher réponse 2" AnchorPane.bottomAnchor="130.0" AnchorPane.rightAnchor="40.0" />
       <Button fx:id="answerC" layoutX="92.0" layoutY="307.0" mnemonicParsing="false" onAction="#handleAnswerC" prefHeight="50.0" prefWidth="200.0" text="Afficher réponse 3" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="40.0" />
       <Button fx:id="answerD" layoutX="276.0" layoutY="307.0" mnemonicParsing="false" onAction="#handleAnswerD" prefHeight="50.0" prefWidth="200.0" text="Afficher réponse 4" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="40.0" />
-      <Label fx:id="questionLabel" alignment="CENTER" layoutX="63.0" layoutY="38.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="97.0" prefWidth="374.0" text="Print question here !!!" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="63.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="38.0" />
+      <Label fx:id="questionLabel" layoutX="9.0" layoutY="10.0" prefHeight="150.0" prefWidth="481.0" text="Label" />
    </children>
 </AnchorPane>

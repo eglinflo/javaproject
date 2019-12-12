@@ -61,6 +61,7 @@
                   </Button>
               </buttons>
             </ButtonBar>
+            <Label fx:id="choosenLanguage" text="Label" GridPane.columnIndex="1" />
          </children>
       </GridPane>
    </children>

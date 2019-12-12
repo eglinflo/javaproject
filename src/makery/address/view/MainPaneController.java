@@ -18,7 +18,7 @@ public class MainPaneController {
 		@FXML
 		public static Button answerD;
 		@FXML
-		public static Label questionLabel;
+		private static Label questionLabel;
 		
 		public static String result;
 		
@@ -29,19 +29,23 @@ public class MainPaneController {
 			this.mainApp = mainApp;
 		}
 	
-		@FXML
+	
 		public void handlePrintQuestion() {
-			//reset();
-			answerA.setText(QuizzGeneration.questions.get(0).getFirstAnswer());
-			answerB.setText(QuizzGeneration.questions.get(0).getSecondAnswer());
+			String textAnswerA = QuizzGeneration.questions.get(0).getFirstAnswer();
+			System.out.println(textAnswerA);
+			reset();
+			
+			//answerA.setText(textAnswerA);
+			/*answerB.setText(QuizzGeneration.questions.get(0).getSecondAnswer());
 			answerC.setText(QuizzGeneration.questions.get(0).getThirdAnswer());
-			answerD.setText(QuizzGeneration.questions.get(0).getFourthAnswer());
-			questionLabel.setText(QuizzGeneration.questions.get(0).getQuestion());
+			answerD.setText(QuizzGeneration.questions.get(0).getFourthAnswer());*/
+			questionLabel.setText(textAnswerA);
 		}
-		
+				
 		@FXML
 		private void handleAnswerA() {
 			result = QuizzGeneration.questions.get(0).getFirstAnswer();
+			questionLabel.setText("blabla");
 			if(verification(result, QuizzGeneration.questions.get(0).getCorrectAnswer())) {
 				answerA.setStyle("-fx-background-color: Green");
 			}
