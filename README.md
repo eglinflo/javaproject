@@ -9,7 +9,18 @@ Eglin Florian, Heimlich Matthieu, Pratx Gabin, Suter Dominik
 
 # Introduction, Ziele, Randbedingung:
 
+Das Projekt  Quizztrina und das zugehörige GIT-Repository entstand im Rahmen einer Projektarbeit für den Kurs Software Engineering.
+Dieses Projekt wurde mit Java, beziehungsweise Java Fx realisiert.
 
+Ziel:
+
+Unser Ziel während dem Projekt war, die in den Fächer erlernten Kompetenzen in Java und Java Fx anhand des Projekt Quizztrinat umzusetzen. Das unser Studium eine sprachliche Abwechslung bietet, wollten wir auch unser Quizz auf diese Stufe bringen.
+Das Ziel war es ein Quizz zu machen, welches unsere Sprachliche Veranlagung fördert und gleichzeitig unsere Vorliebe für das Automobil vorzeigt. Die Besonderheit ist, dass die Fragen austauchbar sind
+Unser Anspruch war es auch die richtigen Antworten in grün erscheinen und die die falsch waren in rot. Und am Schluss eine Zusammenfassung der Resultaten erscheinen.
+
+Randbedingung:
+
+Die Programmierung soll in Java beziehungsweise JavaFx erfolgen. Darüber hinaus sollen die klassen internet mit die entsprechenden Unit-Tests verfügen, 
 
 
 
