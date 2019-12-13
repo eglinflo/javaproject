@@ -21,9 +21,8 @@ Sehr geehrter Benutzer,
 Wir freuen uns Sie auf unserem Quizz begrüssen zu dürfen.  Die Bedienung ist sehr simpel. 
 Als erstes haben Sie die Ehre die Sprache auszuwählen, in welcher Sie gerne das Quizz absolvieren wollen. Dafür klicken Sie ganz einfach auf die Flagge, welche Ihre gewünschte Sprache entspricht.
 
-[Bild 1]: Bild1.PNG
 
-/<img src="https://github.com/eglinflo/javaproject/blob/master/Bild1.PNG" alt="Bild 1"  />
+/<img src="https://github.com/eglinflo/javaproject/blob/master/Bild1.PNG" alt="Bild 1" 
 
 
 Nach dem Aussuchen der Sprache, können mit dem Quizz beginnen. Das Quizz startet automatisch, lesen die Frage gut durch und beantworten Sie diese indem Sie auf die richtige Antwort klicken. Die richtige Antwort wird nach dem aussuchen angezeigt.  Dies erfolgt auch bei einer falschen Antwort, die richtige Antwort wird dann angezeigt.
