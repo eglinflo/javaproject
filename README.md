@@ -58,13 +58,14 @@ Ihr Quizzmaster Team.
 # User Stories
 US  |SP | Priorität | Akzeptanzkriterium 
 ----|:---:|:-----------:|-------------------
-1  Als Benutzer möchte ich mich Unterhalten während 5 Minuten um neue allgemeine Bildung zu lernen.| 3 | 1 | Das Spiel soll in max 5 Minuten zu ende sein
-2  Als Benutzer möchte ich für alle meine Antworten wissen, ob sie richtig war oder nicht um mich zu bewerten. | 3| 2 | Nachdem man die Frage beantwortet hat soll die Antwort angezeigt werden falls es falsch ist
-3  Als Entwickler möchte ich beliebige Fragen hinzufügen können um immer innovativ zu sein. | 5 | 4 | Eine Spezielle Klasse für Fragen und Antworten soll hinzugefügt werden
-4 Als Benutzer möchte ich eine Vielfalt an Fragen gestellt bekommen um immer etwas Neues zu entdecken. | 3 | 3 | Es sollen mindestens 100 Fragen gespeichert sein
-5 Als Entwickler möchte ich ein einfach wartbares Programm damit alle Informatiker es bearbeiten können. | 5 | 5 | Es sollen 2 Klassen und eine Klasse zum testen existieren
-6 Als Benutzer möchte ich ohne Internet spielen können um mich so oft wie möglich zu amüsieren. | 2 | 6 | Das Spiel soll offline gespielt werden können
-7  Als Benutzer möchte ich, dass Spielrunden zeit gestoppt werden um meine Schnelligkeit zu testen | 8 | 7 | Nach 20 Sekunden soll die nächste Frage angezeigt werden
+1  Als Benutzer möchte ich, dass die richtige Antworten in Grün und falschen in rot Markiert werden, somit ich sehe welche Richtig sind| 2 | Mittel | Nach dem die Frage beantwortet ist möchte ich erkennen, ob es falsch oder richtig war
+2 Als Benutzer möchte ich, dass ich die Sprache aussuchen kann damit ich je nach Lust probieren kann | 8 | Hoch | Bevor ich das Quizz beginne möchte ich meine sprachliche Vorliebe aussuchen
+3  Als Quiz Meister, möchte ich wechselhafte Fragen bekommen damit ich Abwechslung habe | 5 | Mittel | Nach dem Ich das Quizz durch gespielt habe, möchte ich nicht immer die gleichen Frage bekommen
+4 Als Benutzer möchte ich am Schluss eine Zusammenfassung bekommen, damit ich mich einschätzen kann | 8 | Hoch | Nach dem man alle Frage beantwortet habe, möchte eine Zusammenfassung bekommen und mein Niveau einzuschätzen.
+5 Als Benutzer möchte ich ein Startmenü haben, damit ich empfangen werde | 3 | Niedrig | Das Spiel soll nicht direkt starten, sondern erst wenn der Benutzer bereit ist
+6 Als Benutzer möchte ich bei jeder frage die richtige Antwort bekommen, damit ich jeder Zeit weiß was richtig ist | 8 | Hoch | Das Spiel soll bei jeder  Fragen, deren richtige Antwort anzeigen, nach Beantwortung dessen
+7  Ich als Benutzer möchte mindestens eine Auswahl aus 30 Fragen haben, damit ich nicht immer die gleichen Fragen habe | 1 | Niedrig | Das Spiel soll mindesten eine Datenbank von 30 Fragen pro Sprache
+8 Als Benutzer möchte ich ein gängiges Dokument Datei für die Fragen, z.B CSV, damit ich je nach Lust die Fragen verändern kann | 1 | Mittel | Die Datenbank der Fragen soll für jede Sprache eine CSV-Datei bekommen
 
 
 
