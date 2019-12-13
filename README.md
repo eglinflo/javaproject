@@ -1,4 +1,4 @@
-# JAVA-Quizmaster
+## JAVA-Quizmaster
 
 
 
@@ -56,6 +56,15 @@ Ihr Quizzmaster Team.
 
 
 # User Stories
+US  |SP | Priorität | Akzeptanzkriterium 
+----|:---:|:-----------:|-------------------
+1  Als Benutzer möchte ich mich Unterhalten während 5 Minuten um neue allgemeine Bildung zu lernen.| 3 | 1 | Das Spiel soll in max 5 Minuten zu ende sein
+2  Als Benutzer möchte ich für alle meine Antworten wissen, ob sie richtig war oder nicht um mich zu bewerten. | 3| 2 | Nachdem man die Frage beantwortet hat soll die Antwort angezeigt werden falls es falsch ist
+3  Als Entwickler möchte ich beliebige Fragen hinzufügen können um immer innovativ zu sein. | 5 | 4 | Eine Spezielle Klasse für Fragen und Antworten soll hinzugefügt werden
+4 Als Benutzer möchte ich eine Vielfalt an Fragen gestellt bekommen um immer etwas Neues zu entdecken. | 3 | 3 | Es sollen mindestens 100 Fragen gespeichert sein
+5 Als Entwickler möchte ich ein einfach wartbares Programm damit alle Informatiker es bearbeiten können. | 5 | 5 | Es sollen 2 Klassen und eine Klasse zum testen existieren
+6 Als Benutzer möchte ich ohne Internet spielen können um mich so oft wie möglich zu amüsieren. | 2 | 6 | Das Spiel soll offline gespielt werden können
+7  Als Benutzer möchte ich, dass Spielrunden zeit gestoppt werden um meine Schnelligkeit zu testen | 8 | 7 | Nach 20 Sekunden soll die nächste Frage angezeigt werden
 
 
 
