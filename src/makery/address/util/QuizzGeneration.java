@@ -4,7 +4,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Vector;
 
-public class QuizzGeneration {
+import makery.address.MainApplication;
+
+public class QuizzGeneration extends MainApplication {
 
 	public static Vector<Question> questions = new Vector<Question>();
 	static int count=0;
@@ -41,6 +43,8 @@ public class QuizzGeneration {
 		questionGeneration();
 
 		debug();
+		
+
 
 	}
 

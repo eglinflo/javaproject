@@ -7,7 +7,7 @@ import makery.address.MainApplication;
 import makery.address.util.QuizzGeneration;
 
 
-public class ChooseLanguagesController {
+public class ChooseLanguagesController extends MainApplication {
 
 	@FXML
 	public Button germanBtn;
@@ -32,7 +32,7 @@ public class ChooseLanguagesController {
 		QuizzGeneration.file = "questionGerman.csv";
 		QuizzGeneration.generation();
 
-		MainApplication.switchToMainApp();
+		switchToMainApp();
 
 	}
 
@@ -41,7 +41,7 @@ public class ChooseLanguagesController {
 		QuizzGeneration.file = "questionEnglish.csv";
 		QuizzGeneration.generation();
 
-		MainApplication.switchToMainApp();
+		switchToMainApp();
 	}
 
 	@FXML
@@ -49,7 +49,7 @@ public class ChooseLanguagesController {
 		QuizzGeneration.file = "questionFrench.csv";
 		QuizzGeneration.generation();
 		
-		MainApplication.switchToMainApp();
+		switchToMainApp();
 	}
 	
 }
