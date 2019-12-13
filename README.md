@@ -31,7 +31,7 @@ Nach dem Aussuchen der Sprache, können mit dem Quizz beginnen. Das Quizz starte
 
 Nach Beendung des Quizz bekommen Sei eine Zusammenfassung Ihrer Ergebnisse.
 
-// ajouter image 3
+<img src="https://github.com/eglinflo/javaproject/blob/master/Bild3.PNG" alt="Bild 3" />
 
 Um das Programm zu beenden gehen Sie auf File und dann auf Exit. Somit schliesst sich das Benutzerfenster und Sie haben Erfolgreich das Programm beendet.
 
