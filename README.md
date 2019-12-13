@@ -27,7 +27,7 @@ Als erstes haben Sie die Ehre die Sprache auszuwählen, in welcher Sie gerne das
 
 Nach dem Aussuchen der Sprache, können mit dem Quizz beginnen. Das Quizz startet automatisch, lesen die Frage gut durch und beantworten Sie diese indem Sie auf die richtige Antwort klicken. Die richtige Antwort wird nach dem aussuchen angezeigt.  Dies erfolgt auch bei einer falschen Antwort, die richtige Antwort wird dann angezeigt.
 
-//ajouter image 2
+<img src="https://github.com/eglinflo/javaproject/blob/master/Bild2.PNG" alt="Bild 2" />
 
 Nach Beendung des Quizz bekommen Sei eine Zusammenfassung Ihrer Ergebnisse.
 
