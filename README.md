@@ -23,7 +23,7 @@ Als erstes haben Sie die Ehre die Sprache auszuwählen, in welcher Sie gerne das
 
 [Bild 1]: Bild1.PNG
 
-// ajouter image 1
+/<img src="Bild1.PNGg" alt="Bild 1" title="optionaler Titel" />
 
 
 Nach dem Aussuchen der Sprache, können mit dem Quizz beginnen. Das Quizz startet automatisch, lesen die Frage gut durch und beantworten Sie diese indem Sie auf die richtige Antwort klicken. Die richtige Antwort wird nach dem aussuchen angezeigt.  Dies erfolgt auch bei einer falschen Antwort, die richtige Antwort wird dann angezeigt.
