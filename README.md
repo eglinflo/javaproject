@@ -21,6 +21,7 @@ Sehr geehrter Benutzer,
 Wir freuen uns Sie auf unserem Quizz begrüssen zu dürfen.  Die Bedienung ist sehr simpel. 
 Als erstes haben Sie die Ehre die Sprache auszuwählen, in welcher Sie gerne das Quizz absolvieren wollen. Dafür klicken Sie ganz einfach auf die Flagge, welche Ihre gewünschte Sprache entspricht.
 
+[Bild 1]: Pfad/zum/Bild.jpg
 
 // ajouter image 1
 
