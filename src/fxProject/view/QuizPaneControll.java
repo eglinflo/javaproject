@@ -1,6 +1,7 @@
 package fxProject.view;
 
 import fxProject.adress.MainApp;
+import fxProject.util.QuizzGeneration;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -100,8 +101,8 @@ public class QuizPaneControll extends MainApp {
 		answerA.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				String result = answerA.getText();
-				if(verification(result, a.getText())) {
+				String result = a.getText();
+				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())==true) {
 					answerA.setBorder(new Border(new BorderStroke(Color.GREEN,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));
 					showRightAnswerIntoLabel (questionlabel, n);}
 				else {
@@ -112,8 +113,8 @@ public class QuizPaneControll extends MainApp {
 		answerB.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				String result = answerB.getText();
-				if(verification(result, a.getText())) {
+				String result = b.getText();
+				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())==true) {
 					answerB.setBorder(new Border(new BorderStroke(Color.GREEN,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));
 					showRightAnswerIntoLabel (questionlabel, n);}
 				else {
@@ -124,8 +125,8 @@ public class QuizPaneControll extends MainApp {
 		answerC.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				String result = answerC.getText();
-				if(verification(result, a.getText())) {
+				String result = c.getText();
+				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())==true) {
 					answerC.setBorder(new Border(new BorderStroke(Color.GREEN,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));
 					showRightAnswerIntoLabel (questionlabel, n);}
 				else {
@@ -136,8 +137,8 @@ public class QuizPaneControll extends MainApp {
 		answerD.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				String result = answerD.getText();
-				if(verification(result, a.getText())) {
+				String result = d.getText();
+				if(verification(result,QuizzGeneration.questions.get(n).getCorrectAnswer())==true) {
 					answerD.setBorder(new Border(new BorderStroke(Color.GREEN,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));
 					showRightAnswerIntoLabel (questionlabel, n);}
 				else {
@@ -152,17 +153,18 @@ public class QuizPaneControll extends MainApp {
 	}
 
 	public static boolean verification(String result,String correctAnswer) {
-
-		if (result == correctAnswer) {
+		
+		result = result + "\\n";
+		System.out.println(result+" "+correctAnswer);
+		
+		boolean test = result.equals(correctAnswer);
+		System.out.println(test);
+		
+		if (test==true) {
 			return true;
 		}
 		else {
 			return false;
 		}
 	}
-
-
-
-
-
 }
