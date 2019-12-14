@@ -2,7 +2,6 @@ package fxProject.view;
 
 import fxProject.adress.MainApp;
 import fxProject.util.QuizzGeneration;
-
 import java.io.FileInputStream;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;

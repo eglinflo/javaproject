@@ -215,9 +215,9 @@ public class QuizPaneControll extends MainApp {
 		boolean status = true;
 		int cpt = 0;
 
-		char[] r_arr = result.toCharArray(); // returns a length 4 char array ['l','i','n','e']
+		char[] r_arr = result.toCharArray();
 
-		char[] a_arr = correctAnswer.toCharArray(); // returns a length 4 char array ['l','i','n','e']
+		char[] a_arr = correctAnswer.toCharArray();
 
 		while (cpt<r_arr.length-1 && status == true) {
 			System.out.println(r_arr[cpt]);

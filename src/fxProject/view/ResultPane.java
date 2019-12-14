@@ -17,10 +17,6 @@ import fxProject.view.QuizPaneControll;
 
 public class ResultPane extends MainApp {
 
-	/*public static void main(String[] args) {
-		launch(args);
-	}*/
-
 	public static void createResultPane(Stage primaryStage) {
 		Stage fenster = primaryStage;
         

@@ -41,7 +41,7 @@ public class QuizzGeneration extends MainApp {
 
 		questionGeneration();
 
-		debug();
+		//debug();
 		
 
 
@@ -60,7 +60,7 @@ public class QuizzGeneration extends MainApp {
 			questions.remove(q);
 			count--;
 
-			System.out.println(count);
+			//System.out.println(count);
 		}
 		while (count>10);
 	}

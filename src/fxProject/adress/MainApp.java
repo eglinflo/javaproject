@@ -1,7 +1,5 @@
 package fxProject.adress;
 
-import fxProject.view.QuizPaneControll;
-import fxProject.view.ResultPane;
 import fxProject.view.StartmenuPane;
 import javafx.application.Application;
 import javafx.scene.control.Label;
