@@ -69,15 +69,14 @@ public class QuizzGeneration extends MainApp {
 		String tmp = "";
 
 		for (Question q : questions) {
-			int random = (int) (Math.random()*4);
-			System.out.println(random);
+			int random = ((int) (Math.random()*4));
 			switch (random) {
 			case 0 : break;
-			case 1 : tmp = q.getFirstAnswer();
+			case 1 : tmp = q.getFirstAnswer();			
 			q.setQuestions(q.getSecondAnswer(), q.getThirdAnswer(), q.getFourthAnswer(), tmp);
-			case 2 : tmp = q.getFirstAnswer();
+			case 2 : tmp = q.getFirstAnswer();			
 			q.setQuestions(q.getThirdAnswer(), q.getFourthAnswer(), tmp, q.getSecondAnswer());
-			case 3 : tmp = q.getFirstAnswer();
+			case 3 : tmp = q.getFirstAnswer();			
 			q.setQuestions(q.getFourthAnswer(), tmp, q.getSecondAnswer(), q.getThirdAnswer());
 			}
 

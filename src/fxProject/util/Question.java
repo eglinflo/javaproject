@@ -8,10 +8,11 @@ public class Question {
 	private String secondAnswer;
 	private String thirdAnswer;
 	private String fourthAnswer;
-	private String correctAnswer;
-
+	private String correctAnswerString;
+	
+	
 	public Question(int questionNumber, String question, String firstAnswer, String secondAnswer, String thirdAnswer,
-			String fourthAnswer, String correctAnswer) {
+			String fourthAnswer, String correctAnswerString) {
 		super();
 		this.questionNumber = questionNumber;
 		this.question = question;
@@ -19,14 +20,14 @@ public class Question {
 		this.secondAnswer = secondAnswer;
 		this.thirdAnswer = thirdAnswer;
 		this.fourthAnswer = fourthAnswer;
-		this.correctAnswer = correctAnswer;
+		this.correctAnswerString = correctAnswerString;
 	}
 
 	@Override
 	public String toString() {
 		return "Question [questionNumber=" + questionNumber + ", question=" + question + ", firstAnswer=" + firstAnswer
 				+ ", secondAnswer=" + secondAnswer + ", thirdAnswer=" + thirdAnswer + ", fourthAnswer=" + fourthAnswer
-				+ ", correctAnswer=" + correctAnswer + "]";
+				+ ", correctAnswerString=" + correctAnswerString + "]";
 	}
 
 	public int getQuestionNumber() {
@@ -78,11 +79,11 @@ public class Question {
 	}
 
 	public String getCorrectAnswer() {
-		return correctAnswer;
+		return correctAnswerString;
 	}
 
 	public void setCorrectAnswer(String correctAnswer) {
-		this.correctAnswer = correctAnswer;
+		this.correctAnswerString = correctAnswer;
 	}
 
 

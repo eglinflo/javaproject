@@ -101,8 +101,8 @@ public class QuizPaneControll extends MainApp {
 		answerA.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				String result = a.getText();
-				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())==true) {
+				String result = a.getText()  + "\n";
+				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())) {
 					answerA.setBorder(new Border(new BorderStroke(Color.GREEN,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));
 					showRightAnswerIntoLabel (questionlabel, n);}
 				else {
@@ -113,8 +113,8 @@ public class QuizPaneControll extends MainApp {
 		answerB.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				String result = b.getText();
-				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())==true) {
+				String result = b.getText()  + "\n";
+				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())) {
 					answerB.setBorder(new Border(new BorderStroke(Color.GREEN,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));
 					showRightAnswerIntoLabel (questionlabel, n);}
 				else {
@@ -125,8 +125,8 @@ public class QuizPaneControll extends MainApp {
 		answerC.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				String result = c.getText();
-				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())==true) {
+				String result = c.getText()  + "\n";
+				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())) {
 					answerC.setBorder(new Border(new BorderStroke(Color.GREEN,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));
 					showRightAnswerIntoLabel (questionlabel, n);}
 				else {
@@ -137,8 +137,8 @@ public class QuizPaneControll extends MainApp {
 		answerD.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				String result = d.getText();
-				if(verification(result,QuizzGeneration.questions.get(n).getCorrectAnswer())==true) {
+				String result = d.getText()  + "\n";
+				if(verification(result,QuizzGeneration.questions.get(n).getCorrectAnswer())) {
 					answerD.setBorder(new Border(new BorderStroke(Color.GREEN,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));
 					showRightAnswerIntoLabel (questionlabel, n);}
 				else {
@@ -154,13 +154,30 @@ public class QuizPaneControll extends MainApp {
 
 	public static boolean verification(String result,String correctAnswer) {
 		
-		result = result + "\n";
-		System.out.println(result+" "+correctAnswer);
+		System.out.println(result + correctAnswer+"-");
 		
-		boolean test = result.equals(correctAnswer);
-		System.out.println(test);
+		boolean status = true;
+		int cpt = 0;
 		
-		if (test==true) {
+		char[] r_arr = result.toCharArray(); // returns a length 4 char array ['l','i','n','e']
+		
+		char[] a_arr = correctAnswer.toCharArray(); // returns a length 4 char array ['l','i','n','e']
+		
+		while (cpt<r_arr.length-1 && status == true) {
+			System.out.println(r_arr[cpt]);
+			System.out.println(a_arr[cpt]);
+			if(r_arr[cpt] != a_arr[cpt]) {
+				status = false;
+			}
+			else {
+				status = true;
+			}
+			cpt++;
+		}
+		
+		System.out.println(status);
+		
+		if (status==true) {
 			compteur++;
 			return true;
 		}
