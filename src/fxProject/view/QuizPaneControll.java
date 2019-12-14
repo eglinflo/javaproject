@@ -85,7 +85,7 @@ public class QuizPaneControll extends MainApp {
 		pane.setLayoutY(0);
 		pane.setPrefSize(700,100);
 		pane.getChildren().add(questionlabel);
-		//pane.setAlignment(Pos.CENTER);
+
 
 		SplitPane splitpane = new SplitPane();
 		splitpane.setLayoutX(0);
@@ -103,14 +103,14 @@ public class QuizPaneControll extends MainApp {
 		answerA.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
+				showRightAnswerIntoLabel (questionlabel, n);
 				String result = a.getText()  + "\n";
 				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())) {
-					answerA.setBorder(new Border(new BorderStroke(Color.GREEN,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));
-					showRightAnswerIntoLabel (questionlabel, n);}
+					answerA.setStyle("-fx-border-color: #00ff00; -fx-border-width: 2px;");}
 				else {
-					answerA.setBorder(new Border(new BorderStroke(Color.RED,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));}
+					answerA.setStyle("-fx-border-color: #ff0000; -fx-border-width: 2px;");}
 				try {
-					TimeUnit.SECONDS.sleep(wait);
+					TimeUnit.SECONDS.sleep(wait);;
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -129,12 +129,12 @@ public class QuizPaneControll extends MainApp {
 		answerB.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
+				showRightAnswerIntoLabel (questionlabel, n);
 				String result = b.getText()  + "\n";
 				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())) {
-					answerB.setBorder(new Border(new BorderStroke(Color.GREEN,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));
-					showRightAnswerIntoLabel (questionlabel, n);}
+					answerB.setStyle("-fx-border-color: #00ff00; -fx-border-width: 2px;");}
 				else {
-					answerB.setBorder(new Border(new BorderStroke(Color.RED,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));}
+					answerB.setStyle("-fx-border-color: #ff0000; -fx-border-width: 2px;");}
 				try {
 					TimeUnit.SECONDS.sleep(wait);
 				} catch (InterruptedException e) {
@@ -154,12 +154,12 @@ public class QuizPaneControll extends MainApp {
 		answerC.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
+				showRightAnswerIntoLabel (questionlabel, n);
 				String result = c.getText()  + "\n";
 				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())) {
-					answerC.setBorder(new Border(new BorderStroke(Color.GREEN,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));
-					showRightAnswerIntoLabel (questionlabel, n);}
+					answerC.setStyle("-fx-border-color: #00ff00; -fx-border-width: 2px;");}
 				else {
-					answerC.setBorder(new Border(new BorderStroke(Color.RED,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));}
+					answerC.setStyle("-fx-border-color: #ff0000; -fx-border-width: 2px;");}
 				try {
 					TimeUnit.SECONDS.sleep(wait);
 				} catch (InterruptedException e) {
@@ -179,16 +179,15 @@ public class QuizPaneControll extends MainApp {
 		answerD.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
+				showRightAnswerIntoLabel (questionlabel, n);
 				String result = d.getText()  + "\n";
 				if(verification(result,QuizzGeneration.questions.get(n).getCorrectAnswer())) {
-					answerD.setBorder(new Border(new BorderStroke(Color.GREEN,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));
-					showRightAnswerIntoLabel (questionlabel, n);}
+					answerD.setStyle("-fx-border-color: #00ff00; -fx-border-width: 2px;");}
 				else {
-					answerD.setBorder(new Border(new BorderStroke(Color.RED,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));}
+					answerD.setStyle("-fx-border-color: #ff0000; -fx-border-width: 2px;");}
 				try {
 					TimeUnit.SECONDS.sleep(wait);
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				if(n<9) {
@@ -243,7 +242,7 @@ public class QuizPaneControll extends MainApp {
 	}
 
 	public static void refresh(Button button) {
-		button.setBorder(new Border(new BorderStroke(Color.TRANSPARENT,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));
+		//button.setStyle("-fx-border-color: TRANSPARENT; -fx-border-width: 2px;");
 		n++;
 	}
 }

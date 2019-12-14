@@ -31,12 +31,14 @@ public class StartmenuPane extends MainApp {
 			Label label1 = new Label("Hello! Welcome to the Trinat-Quiz!");
 			label1.setFont(new Font("Lobster", 70));
 			label1.setTextFill(Color.web("BLACK"));
-			Label label2 = new Label("Click of the start button to beginn");
+			Label label2 = new Label("Click on the start button to begin");
 			label2.setFont(new Font("Lobster", 36));
 			label2.setTextFill(Color.web("GREY"));
 			Label label3 = new Label("Choose your language");
 			label3.setFont(new Font("Lobster", 60));
-			Label languageLabel = new Label("Language");
+			Label languageLabel = new Label("Languages:");
+			languageLabel.setFont(new Font("Lobster", 25));
+			languageLabel.setTextFill(Color.web("GREY"));
 
 			//Création des scènes
 			Scene szene1 = new Scene(startMenu, 1400, 800);

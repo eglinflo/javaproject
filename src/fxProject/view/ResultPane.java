@@ -38,7 +38,7 @@ public class ResultPane extends MainApp {
         correctAnswerBar.setPrefSize(400, 50);
         correctAnswerBar.setProgress((QuizPaneControll.compteur)/10.0);
         
-        Label falseAnswerLabel = new Label("Number of correct answers");
+        Label falseAnswerLabel = new Label("Number of wrong answers");
         falseAnswerLabel.setFont(new Font("Loster", 32));
         falseAnswerLabel.setTextFill(Color.GREY);
         falseAnswerLabel.setTextAlignment(TextAlignment.CENTER);
