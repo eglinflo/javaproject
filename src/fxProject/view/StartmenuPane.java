@@ -88,7 +88,7 @@ public class StartmenuPane extends MainApp {
 				@Override
 				public void handle(ActionEvent event) {
 					QuizzGeneration.file = "questionGerman.csv";
-					//QuizzGeneration.generation();
+					QuizzGeneration.generation();
 					languageLabel.setText("German");
 					System.out.println("Language: German");
 					QuizPaneControll.createQuizPane(primaryStage);
@@ -98,7 +98,7 @@ public class StartmenuPane extends MainApp {
 			englishbutton.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					QuizzGeneration.file = "questionGerman.csv";
+					QuizzGeneration.file = "questionEnglish.csv";
 					QuizzGeneration.generation();
 					languageLabel.setText("English");
 					System.out.println("Language: English");
@@ -109,7 +109,7 @@ public class StartmenuPane extends MainApp {
 			frenchbutton.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					QuizzGeneration.file = "questionGerman.csv";
+					QuizzGeneration.file = "questionFrench.csv";
 					QuizzGeneration.generation();
 					languageLabel.setText("French");
 					System.out.println("Language: French");

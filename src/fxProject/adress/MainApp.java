@@ -27,8 +27,8 @@ public class MainApp extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		StartmenuPane.createStartmenuPane(primaryStage);
-		/*QuizPaneControll.createQuizPane(primaryStage);
-		ResultPane.createResultPane(primaryStage);*/
+		
+		/*ResultPane.createResultPane(primaryStage);*/
 
 	}
 
