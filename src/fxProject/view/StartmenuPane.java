@@ -43,13 +43,15 @@ public class StartmenuPane extends MainApp {
 			Scene szene1 = new Scene(startMenu, 1400, 800);
 			Scene szene2 = new Scene(languageMenu, 1400, 800);
 			
+			
+			
 			//Importation des images
 			/*FileInputStream germanInput = new FileInputStream("C:\\Users\\Elève\\eclipse-workspace\\Java_Fx\\src\\u5\\german_flag.png");
 	        Image germanImage = new Image(germanInput);
 	        ImageView germanView = new ImageView(germanImage);
 	        germanView.setFitWidth(180);
 	    	germanView.setFitHeight(120);
-			FileInputStream englishInput = new FileInputStream("C:\\Users\\Elève\\eclipse-workspace\\Java_Fx\\src\\u5\\english_flag.png");
+			/*FileInputStream englishInput = new FileInputStream("C:\\Users\\Elève\\eclipse-workspace\\Java_Fx\\src\\u5\\english_flag.png");
 	        Image englishImage = new Image(englishInput);
 	        ImageView englishView = new ImageView(englishImage);
 	        englishView.setFitWidth(180);

@@ -21,10 +21,11 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
-
 public class QuizPaneControll extends MainApp {
 
 	public static int n = 0;
+	public static int compteur=0;
+
 	public static void createQuizPane(Stage primaryStage)  
 	{
 		Stage fenster = primaryStage;
@@ -54,9 +55,8 @@ public class QuizPaneControll extends MainApp {
 		answerC.setPrefSize(400, 100);
 		Button answerD = new Button("D");
 		answerD.setPrefSize(400, 100);
-
+		
 		//Button nextQuestion = new Button("-> next");
-
 
 		GridPane gridpane =new GridPane();
 		gridpane.setBorder(new Border(new BorderStroke(Color.GREY,BorderStrokeStyle.SOLID,	null, new BorderWidths(2), new Insets(0,0,0,0))));
@@ -154,13 +154,14 @@ public class QuizPaneControll extends MainApp {
 
 	public static boolean verification(String result,String correctAnswer) {
 		
-		result = result + "\\n";
+		result = result + "\n";
 		System.out.println(result+" "+correctAnswer);
 		
 		boolean test = result.equals(correctAnswer);
 		System.out.println(test);
 		
 		if (test==true) {
+			compteur++;
 			return true;
 		}
 		else {
