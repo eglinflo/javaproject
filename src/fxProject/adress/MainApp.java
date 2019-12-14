@@ -1,10 +1,12 @@
 package fxProject.adress;
 
 import fxProject.view.QuizPaneControll;
+import fxProject.view.ResultPane;
+import fxProject.view.StartmenuPane;
 import javafx.application.Application;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import makery.address.util.QuizzGeneration;
+import fxProject.util.QuizzGeneration;
 
 public class MainApp extends Application {
 
@@ -24,8 +26,9 @@ public class MainApp extends Application {
 
 	@Override
 	public void start(Stage primaryStage) {
-		QuizzGeneration.generation();
-		QuizPaneControll.createQuizPane(primaryStage);
+		StartmenuPane.createStartmenuPane(primaryStage);
+		/*QuizPaneControll.createQuizPane(primaryStage);
+		ResultPane.createResultPane(primaryStage);*/
 
 	}
 

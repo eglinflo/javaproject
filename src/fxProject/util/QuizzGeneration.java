@@ -3,10 +3,9 @@ package fxProject.util;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Vector;
+import fxProject.adress.MainApp;
 
-import makery.address.MainApplication;
-
-public class QuizzGeneration extends MainApplication {
+public class QuizzGeneration extends MainApp {
 
 	public static Vector<Question> questions = new Vector<Question>();
 	static int count=0;

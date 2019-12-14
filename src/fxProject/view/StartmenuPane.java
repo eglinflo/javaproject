@@ -1,7 +1,9 @@
 package fxProject.view;
 
+import fxProject.adress.MainApp;
+import fxProject.util.QuizzGeneration;
+
 import java.io.FileInputStream;
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
@@ -15,9 +17,9 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
-public class SzeneWechsel extends Application {
+public class StartmenuPane extends MainApp {
 
-	public void start(Stage primaryStage) {
+	public static void createStartmenuPane(Stage primaryStage) {
 		try {
 			
 			Stage fenster = primaryStage;
@@ -42,7 +44,7 @@ public class SzeneWechsel extends Application {
 			Scene szene2 = new Scene(languageMenu, 1400, 800);
 			
 			//Importation des images
-			FileInputStream germanInput = new FileInputStream("C:\\Users\\Elève\\eclipse-workspace\\Java_Fx\\src\\u5\\german_flag.png");
+			/*FileInputStream germanInput = new FileInputStream("C:\\Users\\Elève\\eclipse-workspace\\Java_Fx\\src\\u5\\german_flag.png");
 	        Image germanImage = new Image(germanInput);
 	        ImageView germanView = new ImageView(germanImage);
 	        germanView.setFitWidth(180);
@@ -56,13 +58,13 @@ public class SzeneWechsel extends Application {
 	        Image frenchImage = new Image(frenchInput);
 	        ImageView frenchView = new ImageView(frenchImage);
 	        frenchView.setFitWidth(180);
-	    	frenchView.setFitHeight(120);
+	    	frenchView.setFitHeight(120);*/
 			
 			//Création des boutons
 			Button startbutton = new Button("Start");
-			Button germanbutton = new Button("",germanView);
-			Button englishbutton = new Button("",englishView);
-			Button frenchbutton = new Button("",frenchView);
+			Button germanbutton = new Button(""/*,germanView*/);
+			Button englishbutton = new Button(""/*,englishView*/);
+			Button frenchbutton = new Button(""/*,frenchView*/);
 			
 			//Taille des boutons
 			startbutton.setPrefSize(200,100);
@@ -85,30 +87,33 @@ public class SzeneWechsel extends Application {
 			germanbutton.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					//QuizzGeneration.file = "questionGerman.csv";
+					QuizzGeneration.file = "questionGerman.csv";
 					//QuizzGeneration.generation();
 					languageLabel.setText("German");
 					System.out.println("Language: German");
+					QuizPaneControll.createQuizPane(primaryStage);
 				}
 			});
 			
 			englishbutton.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					//QuizzGeneration.file = "questionGerman.csv";
-					//QuizzGeneration.generation();
+					QuizzGeneration.file = "questionGerman.csv";
+					QuizzGeneration.generation();
 					languageLabel.setText("English");
 					System.out.println("Language: English");
+					QuizPaneControll.createQuizPane(primaryStage);
 				}
 			});
 			
 			frenchbutton.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					//QuizzGeneration.file = "questionGerman.csv";
-					//QuizzGeneration.generation();
+					QuizzGeneration.file = "questionGerman.csv";
+					QuizzGeneration.generation();
 					languageLabel.setText("French");
 					System.out.println("Language: French");
+					QuizPaneControll.createQuizPane(primaryStage);
 				}
 			});
 			
