@@ -20,11 +20,13 @@ import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
+import java.util.concurrent.TimeUnit;
 
 public class QuizPaneControll extends MainApp {
 
 	public static int n = 0;
 	public static int compteur=0;
+	public static int wait = 2;
 
 	public static void createQuizPane(Stage primaryStage)  
 	{
@@ -55,7 +57,7 @@ public class QuizPaneControll extends MainApp {
 		answerC.setPrefSize(400, 100);
 		Button answerD = new Button("D");
 		answerD.setPrefSize(400, 100);
-		
+
 		//Button nextQuestion = new Button("-> next");
 
 		GridPane gridpane =new GridPane();
@@ -96,7 +98,7 @@ public class QuizPaneControll extends MainApp {
 
 
 		setTextIntoLabels(a, b, c, d, questionlabel, n);
-		
+
 		//handle A
 		answerA.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -107,7 +109,21 @@ public class QuizPaneControll extends MainApp {
 					showRightAnswerIntoLabel (questionlabel, n);}
 				else {
 					answerA.setBorder(new Border(new BorderStroke(Color.RED,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));}
+				try {
+					TimeUnit.SECONDS.sleep(wait);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				if(n<9) {
+					refresh(answerA);
+					setTextIntoLabels(a, b, c, d, questionlabel, n);
+				}
+				else {
+					ResultPane.createResultPane(primaryStage);
+				}
 			}
+
 		});
 		//handle B
 		answerB.setOnAction(new EventHandler<ActionEvent>() {
@@ -119,6 +135,19 @@ public class QuizPaneControll extends MainApp {
 					showRightAnswerIntoLabel (questionlabel, n);}
 				else {
 					answerB.setBorder(new Border(new BorderStroke(Color.RED,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));}
+				try {
+					TimeUnit.SECONDS.sleep(wait);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				if(n<9) {
+					refresh(answerB);
+					setTextIntoLabels(a, b, c, d, questionlabel, n);
+				}
+				else {
+					ResultPane.createResultPane(primaryStage);
+				}
 			}
 		});
 		//handle C
@@ -131,6 +160,19 @@ public class QuizPaneControll extends MainApp {
 					showRightAnswerIntoLabel (questionlabel, n);}
 				else {
 					answerC.setBorder(new Border(new BorderStroke(Color.RED,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));}
+				try {
+					TimeUnit.SECONDS.sleep(wait);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				if(n<9) {
+					refresh(answerC);
+					setTextIntoLabels(a, b, c, d, questionlabel, n);
+				}
+				else {
+					ResultPane.createResultPane(primaryStage);
+				}
 			}
 		});
 		//handle D
@@ -143,6 +185,20 @@ public class QuizPaneControll extends MainApp {
 					showRightAnswerIntoLabel (questionlabel, n);}
 				else {
 					answerD.setBorder(new Border(new BorderStroke(Color.RED,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));}
+				try {
+					TimeUnit.SECONDS.sleep(wait);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				if(n<9) {
+					refresh(answerD);
+					setTextIntoLabels(a, b, c, d, questionlabel, n);
+				}
+				else {
+					ResultPane.createResultPane(primaryStage);
+				}
+
 			}
 		});
 
@@ -153,16 +209,16 @@ public class QuizPaneControll extends MainApp {
 	}
 
 	public static boolean verification(String result,String correctAnswer) {
-		
+
 		System.out.println(result + correctAnswer+"-");
-		
+
 		boolean status = true;
 		int cpt = 0;
-		
+
 		char[] r_arr = result.toCharArray(); // returns a length 4 char array ['l','i','n','e']
-		
+
 		char[] a_arr = correctAnswer.toCharArray(); // returns a length 4 char array ['l','i','n','e']
-		
+
 		while (cpt<r_arr.length-1 && status == true) {
 			System.out.println(r_arr[cpt]);
 			System.out.println(a_arr[cpt]);
@@ -174,9 +230,9 @@ public class QuizPaneControll extends MainApp {
 			}
 			cpt++;
 		}
-		
+
 		System.out.println(status);
-		
+
 		if (status==true) {
 			compteur++;
 			return true;
@@ -184,5 +240,10 @@ public class QuizPaneControll extends MainApp {
 		else {
 			return false;
 		}
+	}
+
+	public static void refresh(Button button) {
+		button.setBorder(new Border(new BorderStroke(Color.TRANSPARENT,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(0,0,0,0))));
+		n++;
 	}
 }

@@ -13,6 +13,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
+import fxProject.view.QuizPaneControll;
 
 public class ResultPane extends MainApp {
 
@@ -32,28 +33,28 @@ public class ResultPane extends MainApp {
         correctAnswerLabel.setTextFill(Color.GREY);
         correctAnswerLabel.setTextAlignment(TextAlignment.CENTER);
         
-        Label numberCorrectAnswer = new Label ("5");
+        Label numberCorrectAnswer = new Label (String.format("%01d",QuizPaneControll.compteur));
         numberCorrectAnswer.setFont(new Font("Loster", 28));
         numberCorrectAnswer.setTextFill(Color.GREY);
         numberCorrectAnswer.setTextAlignment(TextAlignment.CENTER);
 
         ProgressBar correctAnswerBar = new ProgressBar(0);
         correctAnswerBar.setPrefSize(400, 50);
-        correctAnswerBar.setProgress(0.5);
+        correctAnswerBar.setProgress((QuizPaneControll.compteur)/10.0);
         
         Label falseAnswerLabel = new Label("Number of correct answers");
         falseAnswerLabel.setFont(new Font("Loster", 32));
         falseAnswerLabel.setTextFill(Color.GREY);
         falseAnswerLabel.setTextAlignment(TextAlignment.CENTER);
         
-        Label numberFalseAnswer = new Label ("5");
+        Label numberFalseAnswer = new Label (String.format("%01d",10-(QuizPaneControll.compteur)));
         numberFalseAnswer.setFont(new Font("Loster", 28));
         numberFalseAnswer.setTextFill(Color.GREY);
         numberFalseAnswer.setTextAlignment(TextAlignment.CENTER);
         
         ProgressBar falseAnswerBar = new ProgressBar(0);
         falseAnswerBar.setPrefSize(400, 50);
-        falseAnswerBar.setProgress(0.5);
+        falseAnswerBar.setProgress((10-(QuizPaneControll.compteur))/10.0);
         
         Button exitButton = new Button("Exit Game");
         exitButton.setPrefSize(300, 100);
