@@ -27,9 +27,6 @@ public class MainApp extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		StartmenuPane.createStartmenuPane(primaryStage);
-		
-		/*ResultPane.createResultPane(primaryStage);*/
-
 	}
 
 	public static void main(String[] args) {
