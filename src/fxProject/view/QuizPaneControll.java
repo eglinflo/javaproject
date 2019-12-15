@@ -18,6 +18,7 @@ import javafx.scene.layout.BorderWidths;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 import java.util.concurrent.TimeUnit;
@@ -33,21 +34,30 @@ public class QuizPaneControll extends MainApp {
 		Stage fenster = primaryStage;
 
 		Label questionlabel = new Label("QUESTION");
-		questionlabel.setPrefSize(700, 100);
+		questionlabel.setPrefSize(1000, 200);
 		questionlabel.setTextAlignment(TextAlignment.CENTER);
 		questionlabel.setAlignment(Pos.CENTER);
+		questionlabel.setFont(new Font("Loster", 22));
+		
 		Label a = new Label("a");
 		a.setPrefSize(400, 150);
 		a.setAlignment(Pos.CENTER);
+		a.setFont(new Font("Loster", 20));
+		
 		Label b = new Label("b");
 		b.setPrefSize(400, 100);
 		b.setAlignment(Pos.CENTER);
+		b.setFont(new Font("Loster", 20));
+		
 		Label c = new Label("c");
 		c.setPrefSize(400, 100);
 		c.setAlignment(Pos.CENTER);
+		c.setFont(new Font("Loster", 20));
+		
 		Label d = new Label("d");
 		d.setPrefSize(400, 100);
 		d.setAlignment(Pos.CENTER);
+		d.setFont(new Font("Loster", 20));
 
 		Button answerA = new Button("A");
 		answerA.setPrefSize(400, 100);
@@ -103,25 +113,28 @@ public class QuizPaneControll extends MainApp {
 		answerA.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				showRightAnswerIntoLabel (questionlabel, n);
 				String result = a.getText()  + "\n";
 				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())) {
 					answerA.setStyle("-fx-border-color: #00ff00; -fx-border-width: 2px;");}
 				else {
 					answerA.setStyle("-fx-border-color: #ff0000; -fx-border-width: 2px;");}
+				
 				try {
 					TimeUnit.SECONDS.sleep(wait);;
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				if(n<9) {
+
+				CorrectAnswerPane.showCorrectAnswer(primaryStage);
+
+				/*if(n<9) {
 					refresh(answerA);
 					setTextIntoLabels(a, b, c, d, questionlabel, n);
+
 				}
 				else {
 					ResultPane.createResultPane(primaryStage);
-				}
+				}*/
 			}
 
 		});
@@ -129,74 +142,84 @@ public class QuizPaneControll extends MainApp {
 		answerB.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				showRightAnswerIntoLabel (questionlabel, n);
 				String result = b.getText()  + "\n";
 				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())) {
 					answerB.setStyle("-fx-border-color: #00ff00; -fx-border-width: 2px;");}
 				else {
 					answerB.setStyle("-fx-border-color: #ff0000; -fx-border-width: 2px;");}
+				
 				try {
 					TimeUnit.SECONDS.sleep(wait);
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				if(n<9) {
+
+				CorrectAnswerPane.showCorrectAnswer(primaryStage);
+
+				/*if(n<9) {
 					refresh(answerB);
 					setTextIntoLabels(a, b, c, d, questionlabel, n);
+
 				}
 				else {
 					ResultPane.createResultPane(primaryStage);
-				}
+				}*/
 			}
 		});
 		//handle C
 		answerC.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				showRightAnswerIntoLabel (questionlabel, n);
 				String result = c.getText()  + "\n";
 				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())) {
 					answerC.setStyle("-fx-border-color: #00ff00; -fx-border-width: 2px;");}
 				else {
 					answerC.setStyle("-fx-border-color: #ff0000; -fx-border-width: 2px;");}
+				
 				try {
 					TimeUnit.SECONDS.sleep(wait);
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				if(n<9) {
+				
+				CorrectAnswerPane.showCorrectAnswer(primaryStage);
+
+				/*if(n<9) {
 					refresh(answerC);
 					setTextIntoLabels(a, b, c, d, questionlabel, n);
+
 				}
 				else {
 					ResultPane.createResultPane(primaryStage);
-				}
+				}*/
 			}
 		});
 		//handle D
 		answerD.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				showRightAnswerIntoLabel (questionlabel, n);
 				String result = d.getText()  + "\n";
 				if(verification(result,QuizzGeneration.questions.get(n).getCorrectAnswer())) {
 					answerD.setStyle("-fx-border-color: #00ff00; -fx-border-width: 2px;");}
 				else {
 					answerD.setStyle("-fx-border-color: #ff0000; -fx-border-width: 2px;");}
+				
 				try {
 					TimeUnit.SECONDS.sleep(wait);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				if(n<9) {
+				
+				CorrectAnswerPane.showCorrectAnswer(primaryStage);
+
+				/*if(n<9) {
 					refresh(answerD);
 					setTextIntoLabels(a, b, c, d, questionlabel, n);
+
 				}
 				else {
 					ResultPane.createResultPane(primaryStage);
-				}
+				}*/
 
 			}
 		});
