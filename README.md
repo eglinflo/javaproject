@@ -164,3 +164,52 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 Nach Beendung der 3 Sprints :
 
 <img src="https://github.com/eglinflo/javaproject/blob/master/Klassendiagramm.PNG" alt="Bild 5" />
+
+
+# Prüfung des Usersinterfaces (Black Box)
+
+-Gebiet: Prüfung  der Sprachauswahl:
+
+
+Prüfablauf:  Testen Sie indem Sie die verschiedenen Flaggen drücken, ob sich die Sprache sich verändert hat. Schreiben Sie Ihr Ergebnis in die Bemerkung
+
+
+
+Bemerkung: 
+
+
+
+-Gebiet:  Prüfung der Veränderbarkeit der CSV-Dateien:
+
+
+Prüfablauf:  Wählen Sie eine der 3 CSV Datei aus, welches Sie auch verändern wollen. Nachdem Sie eins ausgesucht haben, tauschen Sie die Fragen aus. Testen Sie ob es geklappt hat.
+
+
+
+Bemerkung; 
+
+
+
+-Gebiet: Prüfung von Antworteingabe:
+
+
+Prüfablauf:  Testen bei ein paar Fragen, ob bei Eingabe von richtigen Antworten, dies auch als richtig gezählt wird.  Das gleiche gilt auch bei falschen Antworten, geben Sie extra falschen Antworten ein und beobachten Sie, ob dies auch als falsch gegolten wir.
+
+
+
+Bemerkung:
+
+
+
+-Gebiet:  Spiel verlassen
+
+
+Prüfablauf: Spielen Sie das Spiel bis zum Schluss, bis Sie auf das Result Fenster erreichen. Gehen Sie dann auf den Knopf Exit unten in der Mitte des Spielfeldes. Drücken Sie darauf und beobachten Sie ob sich das Fenster geschlossen hat oder nicht. 
+
+
+Bemerkung:
+
+
+
+
+
