@@ -114,7 +114,10 @@ US8: Als Benutzer möchte ich, dass die richtige Antworten in Grün und falschen
 # Release plan
 Iteration 1  | Iteration 2 | Iteration 3  
 -------------|:-----------:|:-----------
-
+US1: CSV Datei | US 2: Fragen auswählen | US3: Richtige Antwort
+US7: Sprachauswahl | US4: Startmenü | US5: Zusammenfassung
+               |                | US6: Spiel verlassen
+             |             | US8: Antworten markeiren
 
 
 # Documentation Sprint 1
