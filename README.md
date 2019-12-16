@@ -121,6 +121,6 @@ US7: Sprachauswahl | US4: Startmenü | US5: Zusammenfassung
 
 
 # Documentation Sprint 1
-
+ <em> Taskliste der User Stories (mit Schätzung):
 
 # Documentation Sprint 2
