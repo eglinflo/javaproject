@@ -122,5 +122,13 @@ US7: Sprachauswahl | US4: Startmenü | US5: Zusammenfassung
 
 # Documentation Sprint 1
  <em> Taskliste der User Stories (mit Schätzung):
+Task  | Beschreibung | Aufwandschätzung in Minuten 
+------|:------------:|:---------------------------
+1 | Klasse zur Generierung der Quizz herstellen | 100
+2 | CSV Datei einlesen/herstellen + übersetzen | 120
+3 | Bilder / Flaggen einfügen | 40
+4 | Bedinnungsfenster für die Sprach Auswahl | 40
+5 | Sprache auswählen | 60
+	
 
 # Documentation Sprint 2
