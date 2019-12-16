@@ -157,3 +157,10 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 7 | Interaktion mit dem Benutzer programmieren | 120
 8 | Richtige Antwort  anzeige lassen | 70
 
+// JUnit muss hier noch rein
+
+
+# Klassendiagramm
+Nach Beendung der 3 Sprints :
+
+<img src="https://github.com/eglinflo/javaproject/blob/master/Klassendiagramm.PNG" alt="Bild 5" />
