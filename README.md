@@ -133,3 +133,27 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 	
 
 # Documentation Sprint 2
+ <em> Taskliste der User Stories (mit Schätzung):
+	
+Task  | Beschreibung | Aufwandschätzung in Minuten 
+------|:------------:|:---------------------------
+1 | Klassen zur Generierung der Frage herstellen | 110
+2 | Methode zur Auswahl von 10 Fragen  aus der Datenbank von 30 Fragen | 90
+3 | Randoom  Frage aus der Datenbank aussuchen | 60
+4 | Empfang Spielfenster herstellen | 40
+
+
+# Documentation Sprint 3
+ <em> Taskliste der User Stories (mit Schätzung):
+
+Task  | Beschreibung | Aufwandschätzung in Minuten 
+------|:------------:|:---------------------------
+1 | überprüfen ob die Antwort korrekt ist | 120
+2 | Bei jeder Frage die richtige Antwort rausgeben | 90
+3 | Dem Spieler sagen ob Antwort richtig ist | 40
+4 | Spielfenster herstellen | 40
+5 | Ein Fenster Result machen und  die Resultaten machen | 60
+6 | Spielfenster Exit + Try again programmieren | 100
+7 | Interaktion mit dem Benutzer programmieren | 120
+8 | Richtige Antwort  anzeige lassen | 70
+
