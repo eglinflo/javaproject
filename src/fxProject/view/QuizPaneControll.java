@@ -27,7 +27,7 @@ public class QuizPaneControll extends MainApp {
 
 	public static int n = 0;
 	public static int compteur=0;
-	public static int wait = 2;
+	public static int wait = 1;
 
 	public static void createQuizPane(Stage primaryStage)  
 	{
@@ -38,22 +38,22 @@ public class QuizPaneControll extends MainApp {
 		questionlabel.setTextAlignment(TextAlignment.CENTER);
 		questionlabel.setAlignment(Pos.CENTER);
 		questionlabel.setFont(new Font("Loster", 22));
-		
+
 		Label a = new Label("a");
 		a.setPrefSize(400, 150);
 		a.setAlignment(Pos.CENTER);
 		a.setFont(new Font("Loster", 20));
-		
+
 		Label b = new Label("b");
 		b.setPrefSize(400, 100);
 		b.setAlignment(Pos.CENTER);
 		b.setFont(new Font("Loster", 20));
-		
+
 		Label c = new Label("c");
 		c.setPrefSize(400, 100);
 		c.setAlignment(Pos.CENTER);
 		c.setFont(new Font("Loster", 20));
-		
+
 		Label d = new Label("d");
 		d.setPrefSize(400, 100);
 		d.setAlignment(Pos.CENTER);
@@ -67,8 +67,6 @@ public class QuizPaneControll extends MainApp {
 		answerC.setPrefSize(400, 100);
 		Button answerD = new Button("D");
 		answerD.setPrefSize(400, 100);
-
-		//Button nextQuestion = new Button("-> next");
 
 		GridPane gridpane =new GridPane();
 		gridpane.setBorder(new Border(new BorderStroke(Color.GREY,BorderStrokeStyle.SOLID,	null, new BorderWidths(2), new Insets(0,0,0,0))));
@@ -88,7 +86,6 @@ public class QuizPaneControll extends MainApp {
 		gridpane.add(d, 1, 3);
 		gridpane.setAlignment(Pos.CENTER);
 
-
 		Pane pane = new Pane();
 		pane.setBorder(new Border(new BorderStroke(Color.GREY,BorderStrokeStyle.SOLID,	null, new BorderWidths(2), new Insets(0,0,0,0))));
 		pane.setLayoutX(0);
@@ -96,31 +93,32 @@ public class QuizPaneControll extends MainApp {
 		pane.setPrefSize(700,100);
 		pane.getChildren().add(questionlabel);
 
-
 		SplitPane splitpane = new SplitPane();
 		splitpane.setLayoutX(0);
 		splitpane.setLayoutY(0);
 		splitpane.setPrefSize(700,500);
 		splitpane.setDividerPosition(0, 0.2);
-
 		splitpane.setOrientation(Orientation.VERTICAL);
 		splitpane.getItems().addAll(pane,gridpane);
 
 
 		setTextIntoLabels(a, b, c, d, questionlabel, n);
 
-		//handle A
+		//handle A button
 		answerA.setOnAction(new EventHandler<ActionEvent>() {
+
 			@Override
 			public void handle(ActionEvent event) {
+
 				String result = a.getText()  + "\n";
 				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())) {
-					answerA.setStyle("-fx-border-color: #00ff00; -fx-border-width: 2px;");}
-				else {
-					answerA.setStyle("-fx-border-color: #ff0000; -fx-border-width: 2px;");}
-				
+					answerA.setStyle("-fx-border-color: #00ff00; -fx-border-width: 2px;");
+				}
+				else { answerA.setStyle("-fx-border-color: #ff0000; -fx-border-width: 2px;");
+				}
+
 				try {
-					TimeUnit.SECONDS.sleep(wait);;
+					TimeUnit.SECONDS.sleep(wait);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
@@ -136,18 +134,20 @@ public class QuizPaneControll extends MainApp {
 					ResultPane.createResultPane(primaryStage);
 				}*/
 			}
-
 		});
-		//handle B
+
+		//handle B button
 		answerB.setOnAction(new EventHandler<ActionEvent>() {
+
 			@Override
 			public void handle(ActionEvent event) {
+
 				String result = b.getText()  + "\n";
 				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())) {
 					answerB.setStyle("-fx-border-color: #00ff00; -fx-border-width: 2px;");}
 				else {
 					answerB.setStyle("-fx-border-color: #ff0000; -fx-border-width: 2px;");}
-				
+
 				try {
 					TimeUnit.SECONDS.sleep(wait);
 				} catch (InterruptedException e) {
@@ -166,22 +166,25 @@ public class QuizPaneControll extends MainApp {
 				}*/
 			}
 		});
-		//handle C
+
+		//handle C button
 		answerC.setOnAction(new EventHandler<ActionEvent>() {
+
 			@Override
 			public void handle(ActionEvent event) {
+
 				String result = c.getText()  + "\n";
 				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())) {
 					answerC.setStyle("-fx-border-color: #00ff00; -fx-border-width: 2px;");}
 				else {
 					answerC.setStyle("-fx-border-color: #ff0000; -fx-border-width: 2px;");}
-				
+
 				try {
 					TimeUnit.SECONDS.sleep(wait);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				
+
 				CorrectAnswerPane.showCorrectAnswer(primaryStage);
 
 				/*if(n<9) {
@@ -194,22 +197,25 @@ public class QuizPaneControll extends MainApp {
 				}*/
 			}
 		});
-		//handle D
+
+		//handle D button
 		answerD.setOnAction(new EventHandler<ActionEvent>() {
+
 			@Override
 			public void handle(ActionEvent event) {
+
 				String result = d.getText()  + "\n";
 				if(verification(result,QuizzGeneration.questions.get(n).getCorrectAnswer())) {
 					answerD.setStyle("-fx-border-color: #00ff00; -fx-border-width: 2px;");}
 				else {
 					answerD.setStyle("-fx-border-color: #ff0000; -fx-border-width: 2px;");}
-				
+
 				try {
 					TimeUnit.SECONDS.sleep(wait);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				
+
 				CorrectAnswerPane.showCorrectAnswer(primaryStage);
 
 				/*if(n<9) {
@@ -232,13 +238,12 @@ public class QuizPaneControll extends MainApp {
 
 	public static boolean verification(String result,String correctAnswer) {
 
-		System.out.println(result + correctAnswer+"-");
+		//System.out.println(result + correctAnswer+"-");
 
 		boolean status = true;
 		int cpt = 0;
 
 		char[] r_arr = result.toCharArray();
-
 		char[] a_arr = correctAnswer.toCharArray();
 
 		while (cpt<r_arr.length-1 && status == true) {
@@ -253,7 +258,7 @@ public class QuizPaneControll extends MainApp {
 			cpt++;
 		}
 
-		System.out.println(status);
+		//System.out.println(status);
 
 		if (status==true) {
 			compteur++;
@@ -264,8 +269,8 @@ public class QuizPaneControll extends MainApp {
 		}
 	}
 
-	public static void refresh(Button button) {
-		//button.setStyle("-fx-border-color: TRANSPARENT; -fx-border-width: 2px;");
+	/*public static void refresh(Button button) {
+		button.setStyle("-fx-border-color: TRANSPARENT; -fx-border-width: 2px;");
 		n++;
-	}
+	}*/
 }

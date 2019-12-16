@@ -64,17 +64,18 @@ public class ResultPane extends MainApp {
 		HBox endButtons = new HBox(25, exitButton, againButton);
 		endButtons.setPrefSize(700, 150);
 		endButtons.setAlignment(Pos.CENTER);
-		//endButtons.getChildren().addAll(exitButton, againButton);
 
 		VBox resultLayout = new VBox(30);
 		resultLayout.setPrefSize(700, 500);
 		resultLayout.setAlignment(Pos.TOP_CENTER);
-		resultLayout.getChildren().addAll(titleLabel, correctAnswerLabel, correctAnswerBar, numberCorrectAnswer, falseAnswerLabel, falseAnswerBar, numberFalseAnswer, endButtons);
+		resultLayout.getChildren().addAll(titleLabel, correctAnswerLabel, correctAnswerBar,
+				numberCorrectAnswer, falseAnswerLabel, falseAnswerBar, numberFalseAnswer, endButtons);
+		
 		Scene resultScene = new Scene(resultLayout, 1400, 800, Color.WHITE);
-
 		fenster.setScene(resultScene);
 		fenster.show();
 
+		
 		exitButton.setOnAction(new EventHandler <ActionEvent>() {
 
 			@Override
@@ -82,6 +83,7 @@ public class ResultPane extends MainApp {
 				System.exit(0);
 			}
 		});
+		
 		againButton.setOnAction(new EventHandler <ActionEvent>() {
 
 			@Override

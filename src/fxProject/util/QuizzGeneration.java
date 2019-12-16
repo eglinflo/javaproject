@@ -14,9 +14,8 @@ public class QuizzGeneration extends MainApp {
 	public static void generation() {
 		try {
 
-			//file = "questionFrench"; //les autres fichiers sont nommés "questionEnglish" et "questionGerman".
 			FileReader f = new FileReader(file);
-			System.out.println("File " + file + " was successfully opened.");
+			//System.out.println("File " + file + " was successfully opened.");
 			char [] c = new char[1000000];
 			f.read(c);
 			String s = new String(c);
@@ -26,7 +25,6 @@ public class QuizzGeneration extends MainApp {
 				questions.add(new Question(Integer.parseInt(result[i]), result[i+1], result[i+2], result[i+3], result[i+4], result[i+5], result[i+6]));
 				count++;
 			}
-
 			f.close();
 		}
 		catch (IOException e) {
@@ -34,20 +32,17 @@ public class QuizzGeneration extends MainApp {
 			System.err.println(e.getMessage());
 		}
 
-		System.out.println(count + " Entries created.\n");
-
+		//System.out.println(count + " Entries created.\n");
 		questionSelection();
-		System.out.println(count + " Entries selected.\n");
-
+		//System.out.println(count + " Entries selected.\n");
 		questionGeneration();
 
 		//debug();
-		
-
 
 	}
 
-	public static void debug() {
+	
+	public static void debug() { 			//is a help function
 		for (Question q : questions) {
 			System.out.println(q.toString());
 		}
@@ -59,7 +54,6 @@ public class QuizzGeneration extends MainApp {
 			int q = (int) (Math.random()*count);
 			questions.remove(q);
 			count--;
-
 			//System.out.println(count);
 		}
 		while (count>10);

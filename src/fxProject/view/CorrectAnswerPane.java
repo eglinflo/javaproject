@@ -13,7 +13,6 @@ import javafx.scene.layout.Border;
 import javafx.scene.layout.BorderStroke;
 import javafx.scene.layout.BorderStrokeStyle;
 import javafx.scene.layout.BorderWidths;
-import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -32,7 +31,7 @@ public class CorrectAnswerPane extends QuizPaneControll {
 		answerlb.setFont(new Font("Loster", 25));
 		answerlb.setAlignment(Pos.CENTER);
 		answerlb.setTextAlignment(TextAlignment.CENTER);
-		
+
 		Label answerlabel = new Label("Right Answer");
 		showRightAnswerIntoLabel (answerlabel, QuizPaneControll.n);
 		answerlabel.setFont(new Font("Loster", 30));
@@ -45,7 +44,7 @@ public class CorrectAnswerPane extends QuizPaneControll {
 		next.setFont(new Font("Loster", 22));
 		next.setAlignment(Pos.CENTER);
 
-				
+
 		StackPane pane = new StackPane();
 		pane.setBorder(new Border(new BorderStroke(Color.TRANSPARENT,BorderStrokeStyle.SOLID, null, new BorderWidths(2), new Insets(50,50,50,50))));
 		pane.setLayoutX(0);
@@ -53,12 +52,12 @@ public class CorrectAnswerPane extends QuizPaneControll {
 		pane.setPrefSize(1400,800);
 		pane.setStyle("-fx-background-color: WHITE");
 		pane.getChildren().addAll(answerlb, answerlabel,next);
-		pane.setAlignment(answerlb, Pos.TOP_CENTER);
-		pane.setAlignment(answerlabel, Pos.CENTER);
-		pane.setAlignment(next, Pos.BOTTOM_RIGHT);
-		
-		
-		//handle nextButton
+		StackPane.setAlignment(answerlb, Pos.TOP_CENTER);
+		StackPane.setAlignment(answerlabel, Pos.CENTER);
+		StackPane.setAlignment(next, Pos.BOTTOM_RIGHT);
+
+
+		//handlefunction nextButton
 		next.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
@@ -66,13 +65,12 @@ public class CorrectAnswerPane extends QuizPaneControll {
 				try {
 					TimeUnit.SECONDS.sleep(1);;
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				if(QuizPaneControll.n<9) {
 					QuizPaneControll.n ++;
 					QuizPaneControll.createQuizPane(primaryStage);
-					
+
 				}
 				else {
 					ResultPane.createResultPane(primaryStage);
@@ -81,6 +79,7 @@ public class CorrectAnswerPane extends QuizPaneControll {
 
 		});
 
+		
 		Scene answerScene = new Scene(pane, 1400, 800, Color.WHITE);
 		fenster.setScene(answerScene);
 		fenster.show();

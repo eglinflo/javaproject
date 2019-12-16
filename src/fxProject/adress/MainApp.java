@@ -19,7 +19,7 @@ public class MainApp extends Application {
 	public static void showRightAnswerIntoLabel (Label l, int q) {
 
 		l.setText(QuizzGeneration.questions.get(q).getCorrectAnswer());
-		
+
 	}
 
 	@Override

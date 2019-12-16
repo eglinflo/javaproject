@@ -9,7 +9,7 @@ public class Question {
 	private String thirdAnswer;
 	private String fourthAnswer;
 	private String correctAnswerString;
-	
+
 	public Question(int questionNumber, String question, String firstAnswer, String secondAnswer, String thirdAnswer,
 			String fourthAnswer, String correctAnswerString) {
 		super();
