@@ -121,7 +121,7 @@ US7: Sprachauswahl | US4: Startmenü | US5: Zusammenfassung
 
 
 # Documentation Sprint 1
- <em> Taskliste der User Stories (mit Schätzung):
+ Taskliste der User Stories (mit Schätzung):
 	
 Task  | Beschreibung | Aufwandschätzung in Minuten 
 ------|:------------:|:---------------------------
@@ -133,7 +133,7 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 	
 
 # Documentation Sprint 2
- <em> Taskliste der User Stories (mit Schätzung):
+ Taskliste der User Stories (mit Schätzung):
 	
 Task  | Beschreibung | Aufwandschätzung in Minuten 
 ------|:------------:|:---------------------------
@@ -144,7 +144,7 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 
 
 # Documentation Sprint 3
- <em> Taskliste der User Stories (mit Schätzung):
+Taskliste der User Stories (mit Schätzung):
 
 Task  | Beschreibung | Aufwandschätzung in Minuten 
 ------|:------------:|:---------------------------
