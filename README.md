@@ -16,7 +16,7 @@ Ziel:
 
 Unser Ziel während dem Projekt war, die in den Fächer erlernten Kompetenzen in Java und Java Fx anhand des Projekt Quizztrinat umzusetzen. Das unser Studium eine sprachliche Abwechslung bietet, wollten wir auch unser Quizz auf diese Stufe bringen.
 Das Ziel war es ein Quizz zu machen, welches unsere Sprachliche Veranlagung fördert und gleichzeitig unsere Vorliebe für das Automobil vorzeigt. Die Besonderheit ist, dass die Fragen austauchbar sind
-Unser Anspruch war es auch die richtigen Antworten in grün erscheinen und die die falsch waren in rot. Und am Schluss eine Zusammenfassung der Resultaten erscheinen.
+Unser Anspruch war es auch dass die richtigen Antworten erscheinen. Und am Schluss eine Zusammenfassung der Resultaten erscheint.
 
 Randbedingung:
 
@@ -71,12 +71,50 @@ US  |SP | Priorität | Akzeptanzkriterium
 7  Ich als Benutzer möchte mindestens eine Auswahl aus 30 Fragen haben, damit ich nicht immer die gleichen Fragen habe | 1 | Niedrig | Das Spiel soll mindesten eine Datenbank von 30 Fragen pro Sprache
 8 Als Benutzer möchte ich ein gängiges Dokument Datei für die Fragen, z.B CSV, damit ich je nach Lust die Fragen verändern kann | 1 | Mittel | Die Datenbank der Fragen soll für jede Sprache eine CSV-Datei bekommen
 
+# Taskliste für die Umsetzung der User Story
 
+US1: Als Benutzer möchte ich ein gängiges Dokument Datei für die Fragen, z.B CSV, damit ich je nach Lust die Fragen verändern kann
+	Task:  CSV Datei einlesen/herstellen
+	Task: Klasse zur Generierung der Quizz herstellen
+
+US2:  Ich als Benutzer möchte mindestens eine Auswahl aus 30 Fragen haben, damit ich nicht immer die gleichen Fragen habe
+	Task: Methode zur Auswahl von 10 Fragen  aus der Datenbank von 30 Fragen
+	Task: Klassen zur Generierung der Frage herstellen
+	Task: Randoom  Frage aus der Datenbank aussuchen
+US3: Als Benutzer möchte ich bei jeder frage die richtige Antwort bekommen, damit ich jeder Zeit weiß was richtig ist
+	Task: überprüfen ob die Antwort korrekt ist
+	Task: Dem Spieler sagen ob Antwort richtig ist
+	Task: Bei jeder Frage die richtige Antwort rausgeben
+	Task : Spielfenster herstellen
+
+US4: Als Benutzer möchte ich ein Startmenü haben, damit ich empfangen werde
+	Task: Empfang Spielfenster herstellen
+
+US5: Als Benutzer möchte ich am Schluss eine Zusammenfassung bekommen, damit ich mich einschätzen kann
+	Task: Ein Fenster Result machen und  die Resultaten machen
+
+US6: Als Benutzer möchte eine Möglichkeit haben um das Spiel zu verlassen, damit ich jederzeit aufhören kann
+	Task:  Exit programmieren
+	Task : Spielfenster Exit programmieren
+
+US7: Als Benutzer möchte ich, dass ich die Sprache aussuchen kann damit ich je nach Lust probieren kann
+	Task: Sprache auswählen
+	Task: Bedinnungsfenster für die Sprach Auswahl
+	Task: Bilder / Flaggen einfügen
+
+US8: Als Benutzer möchte ich, dass die richtige Antworten in Grün und falschen in rot Markiert werden, somit ich sehe welche Richtig sind
+	Task: Spielfenster
+	Task: Interaktion mit dem Benutzer programmieren
+	Task:  Richtige Antwort in grün und falsche in rot anzeigen lassen
+
+
+ 
 
 
 # Release plan
+Iteration 1  | Iteration 2 | Iteration 3  
+-------------|:-----------:|:-----------
 
-// Einfügen über trello
 
 
 # Documentation Sprint 1
