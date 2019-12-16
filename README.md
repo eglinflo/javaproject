@@ -38,11 +38,15 @@ Als erstes haben Sie die Ehre die Sprache auszuwählen, in welcher Sie gerne das
 
 Nach dem Aussuchen der Sprache, können mit dem Quizz beginnen. Das Quizz startet automatisch, lesen die Frage gut durch und beantworten Sie diese indem Sie auf die richtige Antwort klicken. Die richtige Antwort wird nach dem aussuchen angezeigt.  Dies erfolgt auch bei einer falschen Antwort, die richtige Antwort wird dann angezeigt.
 
-<img src="https://github.com/eglinflo/javaproject/blob/master/Bild2.PNG" alt="Bild 2" />
+<img src="https://github.com/eglinflo/javaproject/blob/master/Capture_Question.PNG" alt="Bild 2" />
+
+Nach Beantwortung der Frage öffnet sich dieses Fenster und die richtige Antwort wird angezeigt, um weiterzufahren, klicken Sie einfach auf weiter
+
+<img src="https://github.com/eglinflo/javaproject/blob/master/Correct_answer.PNG" alt="Bild 3" />
 
 Nach Beendung des Quizz bekommen Sei eine Zusammenfassung Ihrer Ergebnisse.
 
-<img src="https://github.com/eglinflo/javaproject/blob/master/Bild3.PNG" alt="Bild 3" />
+<img src="https://github.com/eglinflo/javaproject/blob/master/Screen_%20Result.PNG" alt="Bild 4" />
 
 Um das Programm zu beenden gehen Sie auf File und dann auf Exit. Somit schliesst sich das Benutzerfenster und Sie haben Erfolgreich das Programm beendet.
 
