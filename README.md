@@ -205,7 +205,7 @@ Bemerkung;
 
 
 
--Gebiet: Prüfung von Antworteingabe:
+- Gebiet: Prüfung von Antworteingabe:
 
 
 Prüfablauf:  
