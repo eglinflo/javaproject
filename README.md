@@ -1,6 +1,6 @@
-## JAVA-Quizmaster
+# JAVA-Quizmaster
 
-# Inhaltverzeichnis
+## Inhaltverzeichnis
 
 1. Mitglieder
 2. Einleitung, Ziele, Randbedingung
@@ -14,12 +14,12 @@
 10. Klassendiagramm
 11. Black Box
 
-# Mitglieder
+## Mitglieder
 
 Eglin Florian, Heimlich Matthieu, Pratx Gabin, Suter Dominik
 
 
-# Introduction, Ziele, Randbedingung:
+## Introduction, Ziele, Randbedingung:
 
 Das Projekt  Quizztrina und das zugehörige GIT-Repository entstand im Rahmen einer Projektarbeit für den Kurs Software Engineering.
 Dieses Projekt wurde mit Java, beziehungsweise Java Fx realisiert.
@@ -38,7 +38,7 @@ Die Programmierung soll in Java beziehungsweise JavaFx erfolgen. Darüber hinaus
 
 
 
-# Bedinnungsanleitung
+## Bedinnungsanleitung
 
 Sehr geehrter Benutzer,
 Wir freuen uns Sie auf unserem Quizz begrüssen zu dürfen.  Die Bedienung ist sehr simpel. 
@@ -71,7 +71,7 @@ Ihr Quizzmaster Team.
 
 
 
-# User Stories
+## User Stories
 US  |SP | Priorität | Akzeptanzkriterium 
 ----|:---:|:-----------:|-------------------
 1  Als Benutzer möchte ich, dass die richtige Antworten in Grün und falschen in rot Markiert werden, somit ich sehe welche Richtig sind| 2 | Mittel | Nach dem die Frage beantwortet ist möchte ich erkennen, ob es falsch oder richtig war
@@ -83,7 +83,7 @@ US  |SP | Priorität | Akzeptanzkriterium
 7  Ich als Benutzer möchte mindestens eine Auswahl aus 30 Fragen haben, damit ich nicht immer die gleichen Fragen habe | 1 | Niedrig | Das Spiel soll mindesten eine Datenbank von 30 Fragen pro Sprache
 8 Als Benutzer möchte ich ein gängiges Dokument Datei für die Fragen, z.B CSV, damit ich je nach Lust die Fragen verändern kann | 1 | Mittel | Die Datenbank der Fragen soll für jede Sprache eine CSV-Datei bekommen
 
-# Taskliste für die Umsetzung der User Story
+## Taskliste für die Umsetzung der User Story
 
 US1: Als Benutzer möchte ich ein gängiges Dokument Datei für die Fragen, z.B CSV, damit ich je nach Lust die Fragen verändern kann
 	Task:  CSV Datei einlesen/herstellen
@@ -124,7 +124,7 @@ US8: Als Benutzer möchte ich, dass die richtige Antworten in Grün und falschen
  
 
 
-# Release plan
+## Release plan
 Iteration 1  | Iteration 2 | Iteration 3  
 -------------|:-----------:|:-----------
 US1: CSV Datei | US 2: Fragen auswählen | US3: Richtige Antwort
@@ -133,7 +133,7 @@ US7: Sprachauswahl | US4: Startmenü | US5: Zusammenfassung
  0 | 0 | US8: Antworten markeiren
 
 
-# Documentation Sprint 1
+## Documentation Sprint 1
  Taskliste der User Stories (mit Schätzung):
 	
 Task  | Beschreibung | Aufwandschätzung in Minuten 
@@ -145,7 +145,7 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 5 | Sprache auswählen | 60
 	
 
-# Documentation Sprint 2
+## Documentation Sprint 2
  Taskliste der User Stories (mit Schätzung):
 	
 Task  | Beschreibung | Aufwandschätzung in Minuten 
@@ -156,7 +156,7 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 4 | Empfang Spielfenster herstellen | 40
 
 
-# Documentation Sprint 3
+## Documentation Sprint 3
 Taskliste der User Stories (mit Schätzung):
 
 Task  | Beschreibung | Aufwandschätzung in Minuten 
@@ -173,13 +173,13 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 // JUnit muss hier noch rein
 
 
-# Klassendiagramm
+## Klassendiagramm
 Nach Beendung der 3 Sprints :
 
 <img src="https://github.com/eglinflo/javaproject/blob/master/Klassendiagramm.PNG" alt="Bild 5" />
 
 
-# Prüfung des Usersinterfaces (Black Box)
+## Prüfung des Usersinterfaces (Black Box)
 
 -Gebiet: Prüfung  der Sprachauswahl:
 
