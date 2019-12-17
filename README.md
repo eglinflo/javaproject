@@ -2,17 +2,17 @@
 
 # Inhaltverzeichnis
 
-	1. Mitglieder
-	2. Einleitung, Ziele, Randbedingung
-	3. Bedinnungsanleitung
-	4. User stories
-	5. Taskliste fuer die Umsetzung der Us
-	6. Release Plan
-	7. Dokumentation Sprint 1
-	8. Dokumentation Sprint 2
-	9. Dokumentation Sprint 3
-	10. Klassendiagramm
-	11. Black Box
+1. Mitglieder
+2. Einleitung, Ziele, Randbedingung
+3. Bedinnungsanleitung
+4. User stories
+5. Taskliste fuer die Umsetzung der Us
+6. Release Plan
+7. Dokumentation Sprint 1
+8. Dokumentation Sprint 2
+9. Dokumentation Sprint 3
+10. Klassendiagramm
+11. Black Box
 
 # Mitglieder
 
