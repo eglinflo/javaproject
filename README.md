@@ -1,6 +1,18 @@
 ## JAVA-Quizmaster
 
+# Inhaltverzeichnis
 
+	1. Mitglieder
+	2. Einleitung, Ziele, Randbedingung
+	3. Bedinnungsanleitung
+	4. User stories
+	5. Taskliste fuer die Umsetzung der Us
+	6. Release Plan
+	7. Dokumentation Sprint 1
+	8. Dokumentation Sprint 2
+	9. Dokumentation Sprint 3
+	10. Klassendiagramm
+	11. Black Box
 
 # Mitglieder
 
@@ -81,6 +93,7 @@ US2:  Ich als Benutzer möchte mindestens eine Auswahl aus 30 Fragen haben, dami
 	Task: Methode zur Auswahl von 10 Fragen  aus der Datenbank von 30 Fragen
 	Task: Klassen zur Generierung der Frage herstellen
 	Task: Randoom  Frage aus der Datenbank aussuchen
+	
 US3: Als Benutzer möchte ich bei jeder frage die richtige Antwort bekommen, damit ich jeder Zeit weiß was richtig ist
 	Task: überprüfen ob die Antwort korrekt ist
 	Task: Dem Spieler sagen ob Antwort richtig ist
