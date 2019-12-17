@@ -21,7 +21,7 @@ Eglin Florian, Heimlich Matthieu, Pratx Gabin, Suter Dominik
 
 ## Introduction, Ziele, Randbedingung:
 
-Das Projekt  Quizztrina und das zugehörige GIT-Repository entstand im Rahmen einer Projektarbeit für den Kurs Software Engineering.
+Das Projekt  Quizztrinat und das zugehörige GIT-Repository entstand im Rahmen einer Projektarbeit für den Kurs Software Engineering.
 Dieses Projekt wurde mit Java, beziehungsweise Java Fx realisiert.
 
 Ziel:
