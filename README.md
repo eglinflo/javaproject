@@ -21,14 +21,14 @@ Eglin Florian, Heimlich Matthieu, Pratx Gabin, Suter Dominik
 
 ## Introduction, Ziele, Randbedingung:
 
-Das Projekt  Quizztrinat und das zugehörige GIT-Repository entstand im Rahmen einer Projektarbeit für den Kurs Software Engineering.
+Das Projekt Quizztrinat und das zugehörige GIT-Repository entstand im Rahmen einer Projektarbeit für den Kurs Software Engineering.
 Dieses Projekt wurde mit Java, beziehungsweise Java Fx realisiert.
 
 Ziel:
 
 Unser Ziel während dem Projekt war, die in den Fächer erlernten Kompetenzen in Java und Java Fx anhand des Projekt Quizztrinat umzusetzen. Das unser Studium eine sprachliche Abwechslung bietet, wollten wir auch unser Quizz auf diese Stufe bringen.
 Das Ziel war es ein Quizz zu machen, welches unsere Sprachliche Veranlagung fördert und gleichzeitig unsere Vorliebe für das Automobil vorzeigt. Die Besonderheit ist, dass die Fragen austauchbar sind
-Unser Anspruch war es auch dass die richtigen Antworten erscheinen. Und am Schluss eine Zusammenfassung der Resultaten erscheint.
+Unser Anspruch war es auch, dass die richtigen Antworten erscheinen und dass am Schluss eine Zusammenfassung der Resultaten erscheint.
 
 Randbedingung:
 
@@ -52,11 +52,11 @@ Nach dem Aussuchen der Sprache, können mit dem Quizz beginnen. Das Quizz starte
 
 <img src="https://github.com/eglinflo/javaproject/blob/master/Capture_Question.PNG" alt="Bild 2" />
 
-Nach Beantwortung der Frage öffnet sich dieses Fenster und die richtige Antwort wird angezeigt, um weiterzufahren, klicken Sie einfach auf weiter
+Nach Beantwortung der Frage öffnet sich das folgende Fenster und die richtige Antwort wird angezeigt. Um weiterzufahren, klicken Sie bitte auf next.
 
 <img src="https://github.com/eglinflo/javaproject/blob/master/Correct_answer.PNG" alt="Bild 3" />
 
-Nach Beendung des Quizz bekommen Sei eine Zusammenfassung Ihrer Ergebnisse.
+Nach Beendung des Quizz bekommen Sie eine Zusammenfassung Ihrer Ergebnisse.
 
 <img src="https://github.com/eglinflo/javaproject/blob/master/Screen_%20Result.PNG" alt="Bild 4" />
 
@@ -181,10 +181,11 @@ Nach Beendung der 3 Sprints :
 
 ## Prüfung des Usersinterfaces (Black Box)
 
--Gebiet: Prüfung  der Sprachauswahl:
+- Gebiet: Prüfung der Sprachauswahl:
 
 
-Prüfablauf:  Testen Sie indem Sie die verschiedenen Flaggen drücken, ob sich die Sprache sich verändert hat. Schreiben Sie Ihr Ergebnis in die Bemerkung
+Prüfablauf:  
+Testen Sie die Sprachauswahl, indem Sie auf die verschiedenen Flaggen drücken und dabei beobachten, ob sich die Sprache der Fragen geändert hat. Schreiben Sie Ihr Ergebnis in die Bemerkung.
 
 
 
@@ -192,10 +193,11 @@ Bemerkung:
 
 
 
--Gebiet:  Prüfung der Veränderbarkeit der CSV-Dateien:
+- Gebiet:  Prüfung der Veränderbarkeit der CSV-Dateien:
 
 
-Prüfablauf:  Wählen Sie eine der 3 CSV Datei aus, welches Sie auch verändern wollen. Nachdem Sie eins ausgesucht haben, tauschen Sie die Fragen aus. Testen Sie ob es geklappt hat.
+Prüfablauf:  
+Wählen Sie eine der 3 CSV Datei aus, welches Sie auch verändern wollen. Nachdem Sie eins ausgesucht haben, tauschen Sie die Fragen aus. Testen Sie ob es geklappt hat.
 
 
 
@@ -206,7 +208,8 @@ Bemerkung;
 -Gebiet: Prüfung von Antworteingabe:
 
 
-Prüfablauf:  Testen bei ein paar Fragen, ob bei Eingabe von richtigen Antworten, dies auch als richtig gezählt wird.  Das gleiche gilt auch bei falschen Antworten, geben Sie extra falschen Antworten ein und beobachten Sie, ob dies auch als falsch gegolten wir.
+Prüfablauf:  
+Testen bei ein paar Fragen, ob bei Eingabe von richtigen Antworten, dies auch als richtig gezählt wird.  Das gleiche gilt auch bei falschen Antworten, geben Sie extra falschen Antworten ein und beobachten Sie, ob dies auch als falsch gegolten wir.
 
 
 
@@ -214,10 +217,11 @@ Bemerkung:
 
 
 
--Gebiet:  Spiel verlassen
+- Gebiet:  Spiel verlassen
 
 
-Prüfablauf: Spielen Sie das Spiel bis zum Schluss, bis Sie auf das Result Fenster erreichen. Gehen Sie dann auf den Knopf Exit unten in der Mitte des Spielfeldes. Drücken Sie darauf und beobachten Sie ob sich das Fenster geschlossen hat oder nicht. 
+Prüfablauf: 
+Spielen Sie das Spiel zu Ende, bis Sie auf das Result Fenster erreichen. Gehen Sie dann auf den Knopf Exit unten in der Mitte des Spielfeldes. Drücken Sie darauf und beobachten Sie ob sich das Fenster geschlossen hat oder nicht. 
 
 
 Bemerkung:
