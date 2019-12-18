@@ -144,7 +144,7 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 4 | Bedinnungsfenster für die Sprach Auswahl | 40
 5 | Sprache auswählen | 60
 
-###Code snipe des sprint 1:
+### Code snipe des sprint 1:
 ```javascript
 public static void generation() {
 		try {
@@ -179,7 +179,7 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 3 | Randoom  Frage aus der Datenbank aussuchen | 60
 4 | Empfang Spielfenster herstellen | 40
 
-###Code snipe des sprint 2:
+### Code snipe des sprint 2:
 ```javascript
 public static void questionGeneration() {
 		String tmp = "";
@@ -216,7 +216,7 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 7 | Interaktion mit dem Benutzer programmieren | 120
 8 | Richtige Antwort  anzeige lassen | 70
 
-###Code snipe des sprint 3:
+### Code snipe des sprint 3:
 ```javascript
 answerA.setOnAction(new EventHandler<ActionEvent>() {
 
@@ -258,12 +258,12 @@ Nach Beendung der 3 Sprints :
 
 
 Prüfablauf:  
-Testen Sie die Sprachauswahl, indem Sie auf die verschiedenen Flaggen drücken und dabei beobachten, ob sich die Sprache der Fragen geändert hat. Schreiben Sie Ihr Ergebnis in die Bemerkung.
+Testen Sie die Sprachauswahl, indem Sie auf die verschiedenen Knoepfe ( die 3 die zu Auswahle stehen) drücken und dabei beobachten, ob sich die Sprache der Fragen geändert hat. Schreiben Sie Ihr Ergebnis in die Bemerkung.
 
 
 
 Bemerkung: 
-
+Pruefablauf wurde durchgefuehrt und keine Einschraekung wurde festgestellt. Die Sprach lassen sich aendern
 
 
 - Gebiet:  Prüfung der Veränderbarkeit der CSV-Dateien:
@@ -274,7 +274,9 @@ Wählen Sie eine der 3 CSV Datei aus, welches Sie auch verändern wollen. Nachde
 
 
 
-Bemerkung; 
+Bemerkung:
+
+Pruefablauf wurde durchgefuehrt und keine Beanstandung ist wahrzunehmen. Die csv-Dateien lassen sich veraendern und wurden auch ins Spiel eingespielt. Soweit war alles in Ordnung
 
 
 
@@ -287,7 +289,7 @@ Testen bei ein paar Fragen, ob bei Eingabe von richtigen Antworten, dies auch al
 
 
 Bemerkung:
-
+Pruefablauf in Ordnung. Die Erkennung von falschen und richtigen Antworten wurde korrekt erkannt und registriert.
 
 
 - Gebiet:  Spiel verlassen
@@ -298,6 +300,7 @@ Spielen Sie das Spiel zu Ende, bis Sie auf das Result Fenster erreichen. Gehen S
 
 
 Bemerkung:
+der Exit funktionnier ohne Beanstandung, darueber hinaus gibt es sogar ein Try Again knopf welcher auch prima funktioniert .
 
 
 
