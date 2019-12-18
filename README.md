@@ -60,7 +60,9 @@ Nach Beendung des Quizz bekommen Sie eine Zusammenfassung Ihrer Ergebnisse.
 
 <img src="https://github.com/eglinflo/javaproject/blob/master/Screen_%20Result.PNG" alt="Bild 4" />
 
-Um das Programm zu beenden gehen Sie auf File und dann auf Exit. Somit schliesst sich das Benutzerfenster und Sie haben Erfolgreich das Programm beendet.
+
+Um das Programm zu beenden gehen Sie auf Exit. Somit schliesst sich das Benutzerfenster und Sie haben Erfolgreich das Programm beendet. Oder auf Try again falls Sie noch ein Versuch wagen wollen.
+
 
 Falls Sie die Fragen auswechseln wollen, können Sie ganz einfach die Fragen in den CSV-Dateien  der gewünschte Sprache  auswechseln.
 
