@@ -143,6 +143,30 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 3 | Bilder / Flaggen einfügen | 40
 4 | Bedinnungsfenster für die Sprach Auswahl | 40
 5 | Sprache auswählen | 60
+
+###Code snipe des sprint 1:
+```javascript
+public static void generation() {
+		try {
+
+			FileReader f = new FileReader(file);
+			char [] c = new char[1000000];
+			f.read(c);
+			String s = new String(c);
+			String[] result = s.split(";|\n");
+
+			for (int i = 0; i < result.length-1; i=i+7) {
+				questions.add(new Question(Integer.parseInt(result[i]), result[i+1], result[i+2], result[i+3], result[i+4], result[i+5], result[i+6]));
+				count++;
+			}
+			f.close();
+		}
+		catch (IOException e) {
+			System.err.println("Failure to read the file " + file + ".");
+			System.err.println(e.getMessage());
+		}
+```
+Erklaerung: Programm Abschnitt zum ablesen der CSV-Datei. Mit dem Konstruktor new Question wird jedes Mal ein Objekt Question generiert der als Attribute: der Nummer des Fragens, die Frage, die vier Antworten und die richtige Antwort hat.
 	
 
 ## Documentation Sprint 2
@@ -155,6 +179,28 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 3 | Randoom  Frage aus der Datenbank aussuchen | 60
 4 | Empfang Spielfenster herstellen | 40
 
+###Code snipe des sprint 2:
+```javascript
+public static void questionGeneration() {
+		String tmp = "";
+
+		for (Question q : questions) {
+			int random = ((int) (Math.random()*4));
+			switch (random) {
+			case 0 : break;
+			case 1 : tmp = q.getFirstAnswer();			
+			q.setQuestions(q.getSecondAnswer(), q.getThirdAnswer(), q.getFourthAnswer(), tmp);
+			case 2 : tmp = q.getFirstAnswer();			
+			q.setQuestions(q.getThirdAnswer(), q.getFourthAnswer(), tmp, q.getSecondAnswer());
+			case 3 : tmp = q.getFirstAnswer();			
+			q.setQuestions(q.getFourthAnswer(), tmp, q.getSecondAnswer(), q.getThirdAnswer());
+			}
+
+		}
+	}
+```
+
+Erklaerung: Programm Abschnitt der der Reihenfolge der Antworten ändert, damit die Richtige Antwort nicht immer am selben Platz ist. Die Methode setQuestion ändert dann den Wert der Attribute des Objekts Question.
 
 ## Documentation Sprint 3
 Taskliste der User Stories (mit Schätzung):
@@ -170,6 +216,33 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 7 | Interaktion mit dem Benutzer programmieren | 120
 8 | Richtige Antwort  anzeige lassen | 70
 
+###Code snipe des sprint 3:
+```javascript
+answerA.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) {
+
+				String result = a.getText()  + "\n";
+				if(verification(result, QuizzGeneration.questions.get(n).getCorrectAnswer())) {
+					answerA.setStyle("-fx-border-color: #00ff00; -fx-border-width: 2px;");
+				}
+				else { answerA.setStyle("-fx-border-color: #ff0000; -fx-border-width: 2px;");
+				}
+
+				try {
+					TimeUnit.SECONDS.sleep(wait);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+
+				CorrectAnswerPane.showCorrectAnswer(primaryStage);
+
+			}
+		});
+
+```
+Erklaerung: Programm Abschnitt mit den Event Handler von ein Knopf im Quizz. Welcher fuer die Beantwortung der Fragen unersetzlich ist
 // JUnit muss hier noch rein
 
 
