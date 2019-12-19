@@ -247,8 +247,8 @@ public class QuizPaneControll extends MainApp {
 		char[] a_arr = correctAnswer.toCharArray();
 
 		while (cpt<r_arr.length-1 && status == true) {
-			System.out.println(r_arr[cpt]);
-			System.out.println(a_arr[cpt]);
+			//System.out.println(r_arr[cpt]);
+			//System.out.println(a_arr[cpt]);
 			if(r_arr[cpt] != a_arr[cpt]) {
 				status = false;
 			}
@@ -268,9 +268,4 @@ public class QuizPaneControll extends MainApp {
 			return false;
 		}
 	}
-
-	/*public static void refresh(Button button) {
-		button.setStyle("-fx-border-color: TRANSPARENT; -fx-border-width: 2px;");
-		n++;
-	}*/
 }
