@@ -12,6 +12,7 @@ public class Question {
 
 	public Question(int questionNumber, String question, String firstAnswer, String secondAnswer, String thirdAnswer,
 			String fourthAnswer, String correctAnswerString) {
+		
 		super();
 		this.questionNumber = questionNumber;
 		this.question = question;

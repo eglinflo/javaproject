@@ -204,13 +204,14 @@ public class QuizPaneControll extends MainApp {
 		boolean status = true;
 		int cpt = 0;
 
-		char[] r_arr = result.toCharArray();
-		char[] a_arr = correctAnswer.toCharArray();
+		char[] resultArray = result.toCharArray();
+		char[] answerArray = correctAnswer.toCharArray();
 
-		while (cpt<r_arr.length-1 && status == true) {
-			//System.out.println(r_arr[cpt]);
-			//System.out.println(a_arr[cpt]);
-			if(r_arr[cpt] != a_arr[cpt]) {
+
+		while (cpt<resultArray.length-1 && status == true) {
+			System.out.println(resultArray[cpt]);
+			System.out.println(answerArray[cpt]);
+			if(resultArray[cpt] != answerArray[cpt]) {
 				status = false;
 			}
 			else {
