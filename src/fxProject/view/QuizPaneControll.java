@@ -124,15 +124,6 @@ public class QuizPaneControll extends MainApp {
 				}
 
 				CorrectAnswerPane.showCorrectAnswer(primaryStage);
-
-				/*if(n<9) {
-					refresh(answerA);
-					setTextIntoLabels(a, b, c, d, questionlabel, n);
-
-				}
-				else {
-					ResultPane.createResultPane(primaryStage);
-				}*/
 			}
 		});
 
@@ -155,15 +146,6 @@ public class QuizPaneControll extends MainApp {
 				}
 
 				CorrectAnswerPane.showCorrectAnswer(primaryStage);
-
-				/*if(n<9) {
-					refresh(answerB);
-					setTextIntoLabels(a, b, c, d, questionlabel, n);
-
-				}
-				else {
-					ResultPane.createResultPane(primaryStage);
-				}*/
 			}
 		});
 
@@ -186,15 +168,6 @@ public class QuizPaneControll extends MainApp {
 				}
 
 				CorrectAnswerPane.showCorrectAnswer(primaryStage);
-
-				/*if(n<9) {
-					refresh(answerC);
-					setTextIntoLabels(a, b, c, d, questionlabel, n);
-
-				}
-				else {
-					ResultPane.createResultPane(primaryStage);
-				}*/
 			}
 		});
 
@@ -217,16 +190,6 @@ public class QuizPaneControll extends MainApp {
 				}
 
 				CorrectAnswerPane.showCorrectAnswer(primaryStage);
-
-				/*if(n<9) {
-					refresh(answerD);
-					setTextIntoLabels(a, b, c, d, questionlabel, n);
-
-				}
-				else {
-					ResultPane.createResultPane(primaryStage);
-				}*/
-
 			}
 		});
 
@@ -237,8 +200,6 @@ public class QuizPaneControll extends MainApp {
 	}
 
 	public static boolean verification(String result,String correctAnswer) {
-
-		//System.out.println(result + correctAnswer+"-");
 
 		boolean status = true;
 		int cpt = 0;
