@@ -258,8 +258,6 @@ public class QuizPaneControll extends MainApp {
 			cpt++;
 		}
 
-		//System.out.println(status);
-
 		if (status==true) {
 			compteur++;
 			return true;

@@ -97,7 +97,7 @@ public class StartmenuPane extends MainApp {
 					QuizzGeneration.file = "questionGerman.csv";
 					QuizzGeneration.generation();
 					languageLabel.setText("German");
-					System.out.println("Language: German");
+					//System.out.println("Language: German");
 					QuizPaneControll.createQuizPane(primaryStage);
 				}
 			});
@@ -110,7 +110,7 @@ public class StartmenuPane extends MainApp {
 					QuizzGeneration.file = "questionEnglish.csv";
 					QuizzGeneration.generation();
 					languageLabel.setText("English");
-					System.out.println("Language: English");
+					//System.out.println("Language: English");
 					QuizPaneControll.createQuizPane(primaryStage);
 				}
 			});
@@ -123,7 +123,7 @@ public class StartmenuPane extends MainApp {
 					QuizzGeneration.file = "questionFrench.csv";
 					QuizzGeneration.generation();
 					languageLabel.setText("French");
-					System.out.println("Language: French");
+					//System.out.println("Language: French");
 					QuizPaneControll.createQuizPane(primaryStage);
 				}
 			});
