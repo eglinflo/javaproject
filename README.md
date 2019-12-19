@@ -146,7 +146,7 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 4 | Bedinnungsfenster für die Sprach Auswahl | 40
 5 | Sprache auswählen | 60
 
-### Code snipe des sprint 1:
+### Code snippet des Sprint 1:
 ```javascript
 public static void generation() {
 		try {
@@ -181,7 +181,7 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 3 | Randoom  Frage aus der Datenbank aussuchen | 60
 4 | Empfang Spielfenster herstellen | 40
 
-### Code snipe des sprint 2:
+### Code snippet des Sprint 2:
 ```javascript
 public static void questionGeneration() {
 		String tmp = "";
@@ -218,7 +218,7 @@ Task  | Beschreibung | Aufwandschätzung in Minuten
 7 | Interaktion mit dem Benutzer programmieren | 120
 8 | Richtige Antwort  anzeige lassen | 70
 
-### Code snipe des sprint 3:
+### Code snippet des Sprint 3:
 ```javascript
 answerA.setOnAction(new EventHandler<ActionEvent>() {
 

@@ -124,15 +124,6 @@ public class QuizPaneControll extends MainApp {
 				}
 
 				CorrectAnswerPane.showCorrectAnswer(primaryStage);
-
-				/*if(n<9) {
-					refresh(answerA);
-					setTextIntoLabels(a, b, c, d, questionlabel, n);
-
-				}
-				else {
-					ResultPane.createResultPane(primaryStage);
-				}*/
 			}
 		});
 
@@ -155,15 +146,6 @@ public class QuizPaneControll extends MainApp {
 				}
 
 				CorrectAnswerPane.showCorrectAnswer(primaryStage);
-
-				/*if(n<9) {
-					refresh(answerB);
-					setTextIntoLabels(a, b, c, d, questionlabel, n);
-
-				}
-				else {
-					ResultPane.createResultPane(primaryStage);
-				}*/
 			}
 		});
 
@@ -186,15 +168,6 @@ public class QuizPaneControll extends MainApp {
 				}
 
 				CorrectAnswerPane.showCorrectAnswer(primaryStage);
-
-				/*if(n<9) {
-					refresh(answerC);
-					setTextIntoLabels(a, b, c, d, questionlabel, n);
-
-				}
-				else {
-					ResultPane.createResultPane(primaryStage);
-				}*/
 			}
 		});
 
@@ -217,16 +190,6 @@ public class QuizPaneControll extends MainApp {
 				}
 
 				CorrectAnswerPane.showCorrectAnswer(primaryStage);
-
-				/*if(n<9) {
-					refresh(answerD);
-					setTextIntoLabels(a, b, c, d, questionlabel, n);
-
-				}
-				else {
-					ResultPane.createResultPane(primaryStage);
-				}*/
-
 			}
 		});
 
@@ -238,13 +201,12 @@ public class QuizPaneControll extends MainApp {
 
 	public static boolean verification(String result,String correctAnswer) {
 
-		//System.out.println(result + correctAnswer+"-");
-
 		boolean status = true;
 		int cpt = 0;
 
 		char[] resultArray = result.toCharArray();
 		char[] answerArray = correctAnswer.toCharArray();
+
 
 		while (cpt<resultArray.length-1 && status == true) {
 			System.out.println(resultArray[cpt]);
@@ -258,8 +220,6 @@ public class QuizPaneControll extends MainApp {
 			cpt++;
 		}
 
-		//System.out.println(status);
-
 		if (status==true) {
 			compteur++;
 			return true;
@@ -268,9 +228,4 @@ public class QuizPaneControll extends MainApp {
 			return false;
 		}
 	}
-
-	/*public static void refresh(Button button) {
-		button.setStyle("-fx-border-color: TRANSPARENT; -fx-border-width: 2px;");
-		n++;
-	}*/
 }
